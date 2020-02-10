@@ -1,0 +1,290 @@
+[
+  {
+    "emp": {
+      "dataHierarchy": "223191",
+      "deptCode": "BD0",
+      "deptGroupCode": "320200",
+      "flag": "1",
+      "handlerCode": "X241",
+      "handlerName": "刘珊",
+      "mobile": "18626352369",
+      "opDate": "2020-01-17 15:31:44",
+      "sex": "3",
+      "unitCode": "3020300"
+    },
+    "power": [
+      {
+        "deptGroupPower": "320281",
+        "deptPower": "",
+        "headPower": "9010100",
+        "productLine": "K--null",
+        "unitPower": "3020300",
+        "vocationalSkills": "01"
+      }
+    ]
+  },
+  {
+    "emp": {
+      "dataHierarchy": "223191",
+      "deptCode": "BD0",
+      "deptGroupCode": "320200",
+      "flag": "1",
+      "handlerCode": "X245",
+      "handlerName": "陆俊达",
+      "mobile": "11111111111",
+      "opDate": "2020-01-16 10:35:20",
+      "sex": "1",
+      "unitCode": "3020300"
+    },
+    "power": [
+      {
+        "deptGroupPower": "320282",
+        "deptPower": "",
+        "headPower": "9010100",
+        "productLine": "K--null",
+        "unitPower": "3020300",
+        "vocationalSkills": "01"
+      }
+    ]
+  },
+  {
+    "emp": {
+      "dataHierarchy": "",
+      "deptCode": "BD0",
+      "deptGroupCode": "320200",
+      "flag": "1",
+      "handlerCode": "2021",
+      "handlerName": "胡萍",
+      "mobile": "13218852082\r",
+      "opDate": "2020-01-16 00:00:00",
+      "sex": null,
+      "unitCode": "3020300"
+    },
+    "power": [
+      {
+        "deptGroupPower": "",
+        "deptPower": "",
+        "headPower": "9010100",
+        "productLine": "K--null",
+        "unitPower": "3020300",
+        "vocationalSkills": "01"
+      }
+    ]
+  },
+  {
+    "emp": {
+      "dataHierarchy": "223191",
+      "deptCode": "BD6",
+      "deptGroupCode": "320200",
+      "flag": "1",
+      "handlerCode": "2163",
+      "handlerName": "马丽萍",
+      "mobile": "13814204281\r",
+      "opDate": "2020-01-17 15:31:44",
+      "sex": null,
+      "unitCode": "3020300"
+    },
+    "power": [
+      {
+        "deptGroupPower": "",
+        "deptPower": "",
+        "headPower": "9010100",
+        "productLine": "K--null",
+        "unitPower": "3020300",
+        "vocationalSkills": "01"
+      }
+    ]
+  },
+  {
+    "emp": {
+      "dataHierarchy": "system",
+      "deptCode": "BD0",
+      "deptGroupCode": "320200",
+      "flag": "1",
+      "handlerCode": "2293",
+      "handlerName": "张静",
+      "mobile": "15949205011\r",
+      "opDate": "2020-01-17 15:31:44",
+      "sex": null,
+      "unitCode": "3020300"
+    },
+    "power": [
+      {
+        "deptGroupPower": "",
+        "deptPower": "",
+        "headPower": "9010100",
+        "productLine": "K--null",
+        "unitPower": "3020300",
+        "vocationalSkills": "01"
+      }
+    ]
+  },
+  {
+    "emp": {
+      "dataHierarchy": "system",
+      "deptCode": "BD0",
+      "deptGroupCode": "320200",
+      "flag": "1",
+      "handlerCode": "2294",
+      "handlerName": "滕青青",
+      "mobile": "13771051727\r",
+      "opDate": "2020-01-17 15:31:44",
+      "sex": null,
+      "unitCode": "3020300"
+    },
+    "power": [
+      {
+        "deptGroupPower": "",
+        "deptPower": "",
+        "headPower": "9010100",
+        "productLine": "K--null",
+        "unitPower": "3020300",
+        "vocationalSkills": "01"
+      }
+    ]
+  },
+  {
+    "emp": {
+      "dataHierarchy": "system",
+      "deptCode": "BD0",
+      "deptGroupCode": "320200",
+      "flag": "1",
+      "handlerCode": "2730",
+      "handlerName": "唐中琛",
+      "mobile": "18626326258",
+      "opDate": "2020-01-17 15:31:44",
+      "sex": null,
+      "unitCode": "3020300"
+    },
+    "power": [
+      {
+        "deptGroupPower": "",
+        "deptPower": "",
+        "headPower": "9010100",
+        "productLine": "K--null",
+        "unitPower": "3020300",
+        "vocationalSkills": "01"
+      }
+    ]
+  },
+  {
+    "emp": {
+      "dataHierarchy": "system",
+      "deptCode": "BD0",
+      "deptGroupCode": "320200",
+      "flag": "1",
+      "handlerCode": "2817",
+      "handlerName": "袁燕",
+      "mobile": "13921272106",
+      "opDate": "2020-01-17 15:31:44",
+      "sex": null,
+      "unitCode": "3020300"
+    },
+    "power": [
+      {
+        "deptGroupPower": "",
+        "deptPower": "",
+        "headPower": "9010100",
+        "productLine": "K--null",
+        "unitPower": "3020300",
+        "vocationalSkills": "01"
+      }
+    ]
+  },
+  {
+    "emp": {
+      "dataHierarchy": "system",
+      "deptCode": "BD0",
+      "deptGroupCode": "320200",
+      "flag": "1",
+      "handlerCode": "W258",
+      "handlerName": "宁万兴",
+      "mobile": "11111111111",
+      "opDate": "2020-01-17 15:31:44",
+      "sex": "1",
+      "unitCode": "3020300"
+    },
+    "power": [
+      {
+        "deptGroupPower": "320281",
+        "deptPower": "",
+        "headPower": "9010100",
+        "productLine": "K--null",
+        "unitPower": "3020300",
+        "vocationalSkills": "01"
+      }
+    ]
+  },
+  {
+    "emp": {
+      "dataHierarchy": "system",
+      "deptCode": "BD0",
+      "deptGroupCode": "320200",
+      "flag": "1",
+      "handlerCode": "W506",
+      "handlerName": "程艺玉",
+      "mobile": "15995205250",
+      "opDate": "2020-01-17 15:31:44",
+      "sex": null,
+      "unitCode": "3020300"
+    },
+    "power": [
+      {
+        "deptGroupPower": "",
+        "deptPower": "",
+        "headPower": "9010100",
+        "productLine": "K--null",
+        "unitPower": "3020300",
+        "vocationalSkills": "01"
+      }
+    ]
+  },
+  {
+    "emp": {
+      "dataHierarchy": "system",
+      "deptCode": "BD0",
+      "deptGroupCode": "320200",
+      "flag": "1",
+      "handlerCode": "W767",
+      "handlerName": "于虎",
+      "mobile": "11111111111",
+      "opDate": "2020-01-17 15:31:44",
+      "sex": "1",
+      "unitCode": "3020300"
+    },
+    "power": [
+      {
+        "deptGroupPower": "",
+        "deptPower": "",
+        "headPower": "9010100",
+        "productLine": "K--null",
+        "unitPower": "3020300",
+        "vocationalSkills": "01"
+      }
+    ]
+  },
+  {
+    "emp": {
+      "dataHierarchy": "223191",
+      "deptCode": "DP0",
+      "deptGroupCode": "320282",
+      "flag": "1",
+      "handlerCode": "W881",
+      "handlerName": "王熙",
+      "mobile": "18251556826",
+      "opDate": "2020-01-16 10:35:20",
+      "sex": null,
+      "unitCode": "3020300"
+    },
+    "power": [
+      {
+        "deptGroupPower": "320282",
+        "deptPower": "",
+        "headPower": "9010100",
+        "productLine": "K--null",
+        "unitPower": "3020300",
+        "vocationalSkills": "01"
+      }
+    ]
+  }
+]
