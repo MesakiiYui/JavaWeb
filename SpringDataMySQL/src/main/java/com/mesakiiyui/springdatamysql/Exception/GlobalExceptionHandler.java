@@ -15,7 +15,7 @@ public class GlobalExceptionHandler {
         ModelAndView mav = new ModelAndView();
         mav.addObject("exception", e);
         mav.addObject("url", req.getRequestURL());
-        mav.setViewName("error");
+        mav.setViewName("pages/examples/404");
         return mav;
     }
 

@@ -24,7 +24,7 @@ class Demo {
             test();
         }
         void test(){
-            System.out.println("Super.test() flag="+flag);
+            System.out.println("Super.runoob.test() flag="+flag);
         }
     }
     class Sub extends Super{
@@ -33,7 +33,7 @@ class Demo {
             System.out.println("Sub.Sub()flag="+flag);
         }
         void test(){
-            System.out.println("Sub.test()flag="+flag);
+            System.out.println("Sub.runoob.test()flag="+flag);
         }
     }
     public static void main(String[] args) {

@@ -1,0 +1,6 @@
+com\mesakiiyui\mybatisaction\mapper\CacheTest.class
+com\mesakiiyui\mybatisaction\mapper\SysRoleMapperTest.class
+com\mesakiiyui\mybatisaction\mapper\SysUserMapperTest.class
+com\mesakiiyui\mybatisaction\mapper\SysPrivilegeMapperTest.class
+com\mesakiiyui\mybatisaction\mapper\BaseMapperTest.class
+com\mesakiiyui\mybatisaction\mapper\CountryMapperTest.class

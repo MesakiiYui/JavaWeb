@@ -24,6 +24,10 @@ public class MyDate {
 
 
     }
+
+    private void dateCompare() {
+
+    }
     public static void main(String[] args) {
         MyDate md = new MyDate();
         md.dateParser();

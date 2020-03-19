@@ -13,4 +13,5 @@ public class ExceptionControllerTest {
     public String json() throws MyException {
         throw new MyException("发生错误2");
     }
+
 }

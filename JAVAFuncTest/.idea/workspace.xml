@@ -2,97 +2,62 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="466efbda-13ad-4233-b80a-069371dbd5fc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_62.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_json_json_20190722.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/cx/201911192013.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/cx/201911192014.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/FastJson/BaseDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/FastJson/JsonParse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/FastJson/PersonDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/FastJson/RequestDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/FastJson/SerializerFeatureTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/FastJson/TestFastJsonSerialize.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/FastJson/TestGeneral.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/FastJson/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/NotNullCheck/LongNullCheck.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/designPattern/chainofResponsibility/AbstractLogger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/designPattern/chainofResponsibility/ConsoleLogger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/designPattern/chainofResponsibility/ErrorLogger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/designPattern/chainofResponsibility/FileLogger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/designPattern/chainofResponsibility/NoIfElse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/designPattern/factory/Circle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/designPattern/factory/FactoryPatternDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/designPattern/factory/Rectangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/designPattern/factory/Shape.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/designPattern/factory/ShapeFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/designPattern/factory/Square.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/designPattern/factory/factoryModel.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/functest/Date/MyDate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/functest/Exception/MyException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/functest/List/MyArrayList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/functest/List/MyLinkedListTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/functest/Serializable/MainTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/functest/Serializable/Man.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/functest/Serializable/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/functest/Serializable/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/functest/String/StringReplace.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/functest/String/StringSplit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/functest/array/arrayGenerate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/functest/array/arrayMerge.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/functest/array/twoDimentionArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/functest/breakDoubleLoop/BreakDoubleLoop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/functest/map/HashmapTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/functest/nullException/NullExcption.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/functest/nullException/PeopleNull.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/functest/objectParser/ObjectParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/functest/objectParser/People.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/functest/set/SetBasic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/functest/stack/StackBasic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/functest/threadAndRunable/threadTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/jsonParser/response.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/regex/Regex.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringDataMySQL/src/main/java/com/mesakiiyui/springdatamysql/Exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringDataMySQL/src/main/java/com/mesakiiyui/springdatamysql/Exception/MyException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringDataMySQL/src/main/java/com/mesakiiyui/springdatamysql/JUnitTest/Calculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringDataMySQL/src/main/java/com/mesakiiyui/springdatamysql/controller/ExceptionControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringDataMySQL/src/main/java/com/mesakiiyui/springdatamysql/dto/ErrorInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringDataMySQL/src/main/java/com/mesakiiyui/springdatamysql/view/QueryParams.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringDataMySQL/src/main/java/com/mesakiiyui/springdatamysql/view/RespModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringDataMySQL/src/main/java/test/com/mesakiiyui/springdatamysql/JUnitTest/dableSawTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringDataMySQL/src/main/resources/templates/error.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/propertyJSON/vehSmsClaimVo.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/functest/NotNullCheck/Company.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/functest/NotNullCheck/CompanyNullCheck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/functest/NotNullCheck/CompanyVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/functest/trim/DataTrim.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/difficult/candy/Candy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/easy/excelSheetColumnNumber/ExcelSheetColumnNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/medium/insertInterval/InsertInterval.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/medium/kokoEatingBananas/kokoEatingBananas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/medium/numberOfSubarraysWithBoundedMaximum/NumSubarrayBoundedMax.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/runoob/annotation/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/runoob/annotation/TestAnnotation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/runoob/generics/Generics.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/runoob/generics/GenericsClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatisAction/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatisAction/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JAVAFuncTest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JAVAFuncTest.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JAVAFuncTest/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JAVAFuncTest/SimpleDataFormatTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JAVAFuncTest/ThreadLocalForSDF$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JAVAFuncTest/ThreadLocalForSDF.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JAVAFuncTest/how2j/InterfaceInheritance.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JAVAFuncTest/how2j/InterfaceInheritanceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JAVAFuncTest/listcopy/ListCopyMain.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JAVAFuncTest/listcopy/People.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JAVAFuncTest/runoob/BasicDataTypes.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JAVAFuncTest/runoob/ModefierTypes.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JAVAFuncTest/runoob/VariableTypes.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/functest/listcopy/ListCopyMain.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/functest/listcopy/People.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/functest/simpledateformat/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/functest/simpledateformat/SimpleDataFormatTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/functest/simpledateformat/ThreadLocalForSDF.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/how2j/InterfaceInheritance.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/how2j/InterfaceInheritanceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/runoob/BasicDataTypes.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/runoob/ModefierTypes.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/runoob/VariableTypes.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringDataMySQL/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringDataMySQL/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringDataMySQL/src/main/java/com/mesakiiyui/springdatamysql/controller/PageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringDataMySQL/src/main/java/com/mesakiiyui/springdatamysql/controller/PageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringDataMySQL/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringDataMySQL/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FastJson/BaseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/functest/FastJson/BaseDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FastJson/JsonParse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/functest/FastJson/JsonParse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FastJson/PersonDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/functest/FastJson/PersonDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FastJson/RequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/functest/FastJson/RequestDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FastJson/SerializerFeatureTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/functest/FastJson/SerializerFeatureTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FastJson/TestFastJsonSerialize.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/functest/FastJson/TestFastJsonSerialize.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FastJson/TestGeneral.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/functest/FastJson/TestGeneral.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FastJson/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/functest/FastJson/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/NotNullCheck/LongNullCheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/functest/NotNullCheck/LongNullCheck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/functest/Date/MyDate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/functest/Date/MyDate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/functest/nowcoder/TestClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/functest/nowcoder/TestClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/how2j/InterfaceInheritance.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/how2j/InterfaceInheritanceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/regex/Regex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/functest/regex/Regex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test/runoob/Polymorphism/AnimalTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/FastJson/BaseDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/FastJson/JsonParse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/FastJson/PersonDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/FastJson/RequestDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/FastJson/SerializerFeatureTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/FastJson/TestFastJsonSerialize.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/FastJson/TestGeneral$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/FastJson/TestGeneral.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/FastJson/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/NotNullCheck/LongNullCheck.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/functest/Date/MyDate.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/functest/Date/MyDate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/functest/nowcoder/Demo$Sub.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/functest/nowcoder/Demo$Sub.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/functest/nowcoder/Demo$Super.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/functest/nowcoder/Demo$Super.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/how2j/InterfaceInheritance.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/how2j/InterfaceInheritanceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/regex/Regex.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/test/runoob/Polymorphism/AnimalTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBootWithThymeleaf/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBootWithThymeleaf/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -125,28 +90,46 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/designPattern/factory/Shape.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/functest/NotNullCheck/Company.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+            <state relative-caret-position="138">
+              <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+              <folding>
+                <element signature="e#172#173#0" expanded="true" />
+                <element signature="e#220#221#0" expanded="true" />
+                <element signature="e#262#263#0" expanded="true" />
+                <element signature="e#293#294#0" expanded="true" />
+                <element signature="e#320#321#0" expanded="true" />
+                <element signature="e#360#361#0" expanded="true" />
+                <element signature="e#392#393#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/designPattern/factory/Circle.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/functest/NotNullCheck/CompanyVo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="138">
+              <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+              <folding>
+                <element signature="e#171#172#0" expanded="true" />
+                <element signature="e#216#217#0" expanded="true" />
+                <element signature="e#252#253#0" expanded="true" />
+                <element signature="e#283#284#0" expanded="true" />
+                <element signature="e#310#311#0" expanded="true" />
+                <element signature="e#350#351#0" expanded="true" />
+                <element signature="e#382#383#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/functest/String/StringReplace.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/functest/NotNullCheck/CompanyNullCheck.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="6" column="31" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
+            <state relative-caret-position="253">
+              <caret line="11" column="9" lean-forward="true" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -170,6 +153,15 @@
       <find>beantoarray</find>
       <find>\&quot;</find>
       <find>powerDto</find>
+      <find>[[1,2],[3,5],[6,7],[8,10],[12,16]]</find>
+      <find>memo</find>
+      <find>CustomerCode</find>
+      <find>CustomerName</find>
+      <find>vehSmsFlag</find>
+      <find>vehi</find>
+      <find>0000</find>
+      <find>customercode</find>
+      <find>customerCode</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -182,27 +174,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/functest/NoIfElse/NoIfElse.java" />
-        <option value="$PROJECT_DIR$/src/main/java/designPattern/NoIfElse/NoIfElse.java" />
-        <option value="$PROJECT_DIR$/src/main/java/designPattern/NoIfElse/ErrorLogger.java" />
-        <option value="$PROJECT_DIR$/src/main/java/designPattern/chainofResponsibility/AbstractLogger.java" />
-        <option value="$PROJECT_DIR$/src/main/java/designPattern/factory/Shape.java" />
-        <option value="$PROJECT_DIR$/src/main/java/designPattern/factory/Rectangle.java" />
-        <option value="$PROJECT_DIR$/src/main/java/designPattern/factory/Square.java" />
-        <option value="$PROJECT_DIR$/src/main/java/designPattern/factory/Circle.java" />
-        <option value="$PROJECT_DIR$/src/main/java/designPattern/factory/ShapeFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/functest/List/MyArrayList.java" />
-        <option value="$PROJECT_DIR$/src/main/java/functest/stringbufferandbuilderimpl/BufferAndBuiler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/test/runoob/Polymorphism/AnimalTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/designPattern/factory/FactoryPatternDemo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/functest/javautilimpl/CollectionImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/functest/jsonimpl/JSONImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/functest/Serializable/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/functest/Serializable/MainTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/functest/Serializable/Person.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/functest/nullException/NullExcption.java" />
-        <option value="$PROJECT_DIR$/src/main/java/FastJson/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/FastJson/TestFastJsonSerialize.java" />
         <option value="$PROJECT_DIR$/src/main/java/FastJson/SerializerFeatureTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/FastJson/BaseDTO.java" />
@@ -233,6 +204,27 @@
         <option value="$PROJECT_DIR$/src/main/java/designPattern/factory/factoryModel.md" />
         <option value="$PROJECT_DIR$/src/main/java/jsonParser/response.json" />
         <option value="$PROJECT_DIR$/src/main/java/functest/String/StringReplace.java" />
+        <option value="$PROJECT_DIR$/src/main/java/functest/Date/MyDate.java" />
+        <option value="$PROJECT_DIR$/src/main/java/leetcode/medium/insertInterval/InsertInterval.java" />
+        <option value="$PROJECT_DIR$/src/main/java/functest/NotNullCheck/LongNullCheck.java" />
+        <option value="$PROJECT_DIR$/src/main/java/runoob/Generics.java" />
+        <option value="$PROJECT_DIR$/src/main/java/runoob/Polymorphism/generics/Generics.java" />
+        <option value="$PROJECT_DIR$/src/main/java/runoob/generics/GenericsClass.java" />
+        <option value="$PROJECT_DIR$/src/main/java/runoob/generics/Generics.java" />
+        <option value="$PROJECT_DIR$/src/main/java/leetcode/easy/ExcelSheetColumnNumber/ExcelSheetColumnNumber.java" />
+        <option value="$PROJECT_DIR$/src/main/java/leetcode/easy/excelSheetColumnNumber/ExcelSheetColumnNumber.java" />
+        <option value="$PROJECT_DIR$/src/main/java/leetcode/difficult/candy/Candy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/leetcode/medium/numberOfSubarraysWithBoundedMaximum/NumberOfSubarraysWithBoundedMaximum.java" />
+        <option value="$PROJECT_DIR$/src/main/java/leetcode/medium/numberOfSubarraysWithBoundedMaximum/NumSubarrayBoundedMax.java" />
+        <option value="$PROJECT_DIR$/src/main/java/leetcode/medium/kokoEatingBananas/kokoEatingBananas.java" />
+        <option value="$PROJECT_DIR$/src/main/java/runoob/annotation/TestAnnotation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/runoob/annotation/Test.java" />
+        <option value="$PROJECT_DIR$/propertyJSON/data1.json" />
+        <option value="$PROJECT_DIR$/propertyJSON/vehSmsClaimVo.json" />
+        <option value="$PROJECT_DIR$/src/main/java/functest/trim/DataTrim.java" />
+        <option value="$PROJECT_DIR$/src/main/java/functest/NotNullCheck/Company.java" />
+        <option value="$PROJECT_DIR$/src/main/java/functest/NotNullCheck/CompanyVo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/functest/NotNullCheck/CompanyNullCheck.java" />
       </list>
     </option>
   </component>
@@ -254,10 +246,11 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-9" />
-    <option name="width" value="1935" />
-    <option name="height" value="1038" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1048" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -272,7 +265,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -283,6 +275,11 @@
             <path>
               <item name="JAVAFuncTest" type="b2602c69:ProjectViewProjectNode" />
               <item name="JAVAFuncTest" type="462c0819:PsiDirectoryNode" />
+              <item name="propertyJSON" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JAVAFuncTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JAVAFuncTest" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -313,12 +310,22 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="functest" type="462c0819:PsiDirectoryNode" />
-              <item name="String" type="462c0819:PsiDirectoryNode" />
+              <item name="NotNullCheck" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JAVAFuncTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JAVAFuncTest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="functest" type="462c0819:PsiDirectoryNode" />
+              <item name="trim" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="CatdeaLogs" />
     </panes>
   </component>
@@ -338,7 +345,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.20336787" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -372,13 +379,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.StringReplace">
-    <configuration name="HashmapTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="functest.map.HashmapTest" />
+  <component name="RunManager" selected="Application.CompanyNullCheck">
+    <configuration name="Candy" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.difficult.candy.Candy" />
       <module name="JAVAFuncTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="functest.map.*" />
+          <option name="PATTERN" value="leetcode.difficult.candy.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -386,12 +393,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SetBasic" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="functest.set.SetBasic" />
+    <configuration name="CompanyNullCheck" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="functest.NotNullCheck.CompanyNullCheck" />
       <module name="JAVAFuncTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="functest.set.*" />
+          <option name="PATTERN" value="functest.NotNullCheck.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -399,12 +406,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StackBasic" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="functest.stack.StackBasic" />
+    <configuration name="DataTrim" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="functest.trim.DataTrim" />
       <module name="JAVAFuncTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="functest.stack.*" />
+          <option name="PATTERN" value="functest.trim.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -412,12 +419,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StringReplace" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="functest.String.StringReplace" />
+    <configuration name="NumSubarrayBoundedMax" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.medium.numberOfSubarraysWithBoundedMaximum.NumSubarrayBoundedMax" />
       <module name="JAVAFuncTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="functest.String.*" />
+          <option name="PATTERN" value="leetcode.medium.numberOfSubarraysWithBoundedMaximum.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -425,12 +432,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StringSplit" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="functest.String.StringSplit" />
+    <configuration name="kokoEatingBananas" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.medium.kokoEatingBananas.kokoEatingBananas" />
       <module name="JAVAFuncTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="functest.String.*" />
+          <option name="PATTERN" value="leetcode.medium.kokoEatingBananas.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -537,19 +544,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.SetBasic" />
-      <item itemvalue="Application.StackBasic" />
-      <item itemvalue="Application.StringSplit" />
-      <item itemvalue="Application.HashmapTest" />
-      <item itemvalue="Application.StringReplace" />
+      <item itemvalue="Application.Candy" />
+      <item itemvalue="Application.NumSubarrayBoundedMax" />
+      <item itemvalue="Application.kokoEatingBananas" />
+      <item itemvalue="Application.DataTrim" />
+      <item itemvalue="Application.CompanyNullCheck" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.StringReplace" />
-        <item itemvalue="Application.HashmapTest" />
-        <item itemvalue="Application.StringSplit" />
-        <item itemvalue="Application.StackBasic" />
-        <item itemvalue="Application.SetBasic" />
+        <item itemvalue="Application.CompanyNullCheck" />
+        <item itemvalue="Application.DataTrim" />
+        <item itemvalue="Application.kokoEatingBananas" />
+        <item itemvalue="Application.NumSubarrayBoundedMax" />
+        <item itemvalue="Application.Candy" />
       </list>
     </recent_temporary>
   </component>
@@ -629,11 +636,20 @@
       <workItem from="1578982386503" duration="14000" />
       <workItem from="1579162495230" duration="1732000" />
       <workItem from="1581056493551" duration="715000" />
+      <workItem from="1581313982819" duration="1644000" />
+      <workItem from="1581385992159" duration="400000" />
+      <workItem from="1582787049039" duration="625000" />
+      <workItem from="1583819450446" duration="16290000" />
+      <workItem from="1583895636080" duration="22596000" />
+      <workItem from="1584064358649" duration="6164000" />
+      <workItem from="1584087498557" duration="133000" />
+      <workItem from="1584326007840" duration="752000" />
+      <workItem from="1584424497421" duration="512000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="164776000" />
+    <option name="totallyTimeSpent" value="213892000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -645,10 +661,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19034852" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.211126" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -657,13 +673,13 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Nl-Palette" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39943343" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32991204" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32991204" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.313783" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32991204" />
       <window_info anchor="bottom" id="Sequence" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="10" />
@@ -685,6 +701,7 @@
       <window_info anchor="right" id="Theme Preview" order="10" />
       <window_info anchor="right" id="RestServices" order="11" />
       <window_info anchor="right" id="Maven" order="12" />
+      <window_info anchor="right" id="Coverage" order="13" side_tool="true" weight="0.3297587" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -695,194 +712,22 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/JAVAFuncTest$NumSubarrayBoundedMax.ic" NAME="NumSubarrayBoundedMax Coverage Results" MODIFIED="1583919155850" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>leetcode.medium.numberOfSubarraysWithBoundedMaximum.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/JAVAFuncTest$JsonParse.ic" NAME="JsonParse Coverage Results" MODIFIED="1573803748023" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>FastJson.*</FILTER>
     </SUITE>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/designPattern/factory/Rectangle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/designPattern/factory/Square.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/designPattern/factory/ShapeFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/designPattern/factory/FactoryPatternDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/runoob/VariableTypes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/runoob/ModefierTypes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/runoob/BasicDataTypes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/functest/List/MyArrayList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/After.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/test/runoob/Polymorphism/AnimalTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/functest/nullException/NullExcption.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/functest/nullException/PeopleNull.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/fastjson/1.2.62/fastjson-1.2.62.jar!/com/alibaba/fastjson/JSON.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="451" column="65" selection-start-line="451" selection-start-column="65" selection-end-line="451" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/fastjson/1.2.62/fastjson-1.2.62-sources.jar!/com/alibaba/fastjson/JSON.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="650" column="30" lean-forward="true" selection-start-line="650" selection-start-column="30" selection-end-line="650" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/fastjson/1.2.62/fastjson-1.2.62-sources.jar!/com/alibaba/fastjson/serializer/SerializerFeature.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-810">
-          <caret line="156" column="4" selection-start-line="156" selection-start-column="4" selection-end-line="156" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/functest/jsonimpl/JSONImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/functest/javautilimpl/CollectionImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/functest/javautilimpl/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/FastJson/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/FastJson/TestGeneral.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/FastJson/TestFastJsonSerialize.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/leetcode/easy/addtwonumbers/AddTwoNumbers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-97">
-          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/FastJson/SerializerFeatureTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="946">
-          <caret line="43" column="48" selection-start-line="43" selection-start-column="48" selection-end-line="43" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/cx/201911192014.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="34" selection-start-column="34" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/FastJson/PersonDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/FastJson/BaseDTO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/functest/FastJson/BaseDTO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
           <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/FastJson/JsonParse.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/functest/FastJson/JsonParse.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="12" selection-start-line="12" selection-end-line="12" />
@@ -903,31 +748,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/FastJson/RequestDTO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/functest/FastJson/RequestDTO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/NotNullCheck/LongNullCheck.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/functest/array/arrayMerge.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/functest/array/arrayGenerate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -981,7 +805,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/regex/Regex.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/functest/regex/Regex.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="759">
           <caret line="34" column="36" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
@@ -1005,24 +829,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/functest/array/twoDimentionArray.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/functest/map/HashmapTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1311">
           <caret line="57" column="27" lean-forward="true" selection-start-line="57" selection-start-column="27" selection-end-line="57" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/designPattern/factory/Shape.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -1057,6 +867,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/designPattern/factory/Shape.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/designPattern/factory/Circle.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
@@ -1067,7 +884,231 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/functest/String/StringReplace.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
-          <caret line="6" column="31" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
+          <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/functest/Date/MyDate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/functest/array/arrayMerge.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/functest/array/arrayGenerate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/functest/array/twoDimentionArray.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/functest/threadAndRunable/threadTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/how2j/InterfaceInheritance.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/how2j/InterfaceInheritanceImpl.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/functest/NotNullCheck/LongNullCheck.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/runoob/test/runoob/Polymorphism/AnimalTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/leetcode/medium/insertInterval/InsertInterval.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1104">
+          <caret line="48" column="18" selection-start-line="48" selection-start-column="18" selection-end-line="48" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/runoob/VariableTypes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/runoob/ModefierTypes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/runoob/BasicDataTypes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/runoob/Polymorphism/Animal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/runoob/Polymorphism/Polymorphism.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/runoob/generics/GenericsClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+          <folding>
+            <element signature="e#101#102#0" expanded="true" />
+            <element signature="e#127#128#0" expanded="true" />
+            <element signature="e#149#150#0" expanded="true" />
+            <element signature="e#173#174#0" expanded="true" />
+            <element signature="e#262#271#0" expanded="true" />
+            <element signature="e#314#322#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/runoob/generics/Generics.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+          <folding>
+            <element signature="e#1744#1745#0" expanded="true" />
+            <element signature="e#1802#1803#0" expanded="true" />
+            <element signature="e#1870#1871#0" expanded="true" />
+            <element signature="e#1928#1929#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/leetcode/easy/excelSheetColumnNumber/ExcelSheetColumnNumber.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="33" column="22" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/leetcode/difficult/candy/Candy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="57" column="14" selection-start-line="57" selection-start-column="14" selection-end-line="57" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/leetcode/medium/numberOfSubarraysWithBoundedMaximum/NumSubarrayBoundedMax.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="43" column="5" lean-forward="true" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/Math.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="421" column="25" selection-start-line="421" selection-start-column="25" selection-end-line="421" selection-end-column="25" />
+          <folding>
+            <element signature="e#16338#16339#0" expanded="true" />
+            <element signature="e#16420#16421#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/leetcode/medium/kokoEatingBananas/kokoEatingBananas.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="39" column="5" lean-forward="true" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/runoob/annotation/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/runoob/annotation/TestAnnotation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="34" lean-forward="true" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/functest/trim/DataTrim.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/propertyJSON/vehSmsClaimVo.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="586">
+          <caret line="166" column="32" selection-start-line="166" selection-start-column="32" selection-end-line="166" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/functest/NotNullCheck/Company.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+          <folding>
+            <element signature="e#172#173#0" expanded="true" />
+            <element signature="e#220#221#0" expanded="true" />
+            <element signature="e#262#263#0" expanded="true" />
+            <element signature="e#293#294#0" expanded="true" />
+            <element signature="e#320#321#0" expanded="true" />
+            <element signature="e#360#361#0" expanded="true" />
+            <element signature="e#392#393#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/functest/NotNullCheck/CompanyVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+          <folding>
+            <element signature="e#171#172#0" expanded="true" />
+            <element signature="e#216#217#0" expanded="true" />
+            <element signature="e#252#253#0" expanded="true" />
+            <element signature="e#283#284#0" expanded="true" />
+            <element signature="e#310#311#0" expanded="true" />
+            <element signature="e#350#351#0" expanded="true" />
+            <element signature="e#382#383#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/functest/NotNullCheck/CompanyNullCheck.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="9" lean-forward="true" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
         </state>
       </provider>
     </entry>
