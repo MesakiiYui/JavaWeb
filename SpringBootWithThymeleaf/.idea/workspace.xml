@@ -2,9 +2,131 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8422c698-92fd-43de-a9b4-87b33d0953ef" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../JAVAFuncTest/src/SimpleDataFormatTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JAVAFuncTest/src/ThreadLocalForSDF.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVAFuncTest/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVAFuncTest/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVAFuncTest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVAFuncTest/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/FastJson/BaseDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/FastJson/BaseDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/FastJson/JsonParse.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/FastJson/JsonParse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/FastJson/PersonDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/FastJson/PersonDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/FastJson/RequestDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/FastJson/RequestDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/FastJson/SerializerFeatureTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/FastJson/SerializerFeatureTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/FastJson/TestFastJsonSerialize.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/FastJson/TestFastJsonSerialize.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/FastJson/TestGeneral$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/FastJson/TestGeneral$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/FastJson/TestGeneral.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/FastJson/TestGeneral.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/FastJson/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/FastJson/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/NotNullCheck/LongNullCheck.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/NotNullCheck/LongNullCheck.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/designPattern/chainofResponsibility/AbstractLogger.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/designPattern/chainofResponsibility/AbstractLogger.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/designPattern/chainofResponsibility/ConsoleLogger.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/designPattern/chainofResponsibility/ConsoleLogger.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/designPattern/chainofResponsibility/ErrorLogger.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/designPattern/chainofResponsibility/ErrorLogger.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/designPattern/chainofResponsibility/FileLogger.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/designPattern/chainofResponsibility/FileLogger.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/designPattern/chainofResponsibility/NoIfElse.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/designPattern/chainofResponsibility/NoIfElse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/designPattern/factory/Circle.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/designPattern/factory/Circle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/designPattern/factory/FactoryPatternDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/designPattern/factory/FactoryPatternDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/designPattern/factory/Rectangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/designPattern/factory/Rectangle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/designPattern/factory/Shape.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/designPattern/factory/Shape.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/designPattern/factory/ShapeFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/designPattern/factory/ShapeFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/designPattern/factory/Square.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/designPattern/factory/Square.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/functest/Date/MyDate.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/functest/Date/MyDate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/functest/Exception/MyException.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/functest/Exception/MyException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/functest/IDCardValidator/IDCardValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/functest/IDCardValidator/IDCardValidator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/functest/List/MyArrayList.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/functest/List/MyArrayList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/functest/List/MyLinkedListTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/functest/List/MyLinkedListTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/functest/Serializable/MainTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/functest/Serializable/MainTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/functest/Serializable/Man.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/functest/Serializable/Man.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/functest/Serializable/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/functest/Serializable/Person.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/functest/Serializable/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/functest/Serializable/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/functest/String/BufferAndBuiler.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/functest/String/BufferAndBuiler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/functest/String/StringReplace.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/functest/String/StringReplace.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/functest/String/StringSplit.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/functest/String/StringSplit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/functest/array/arrayGenerate.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/functest/array/arrayGenerate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/functest/array/arrayMerge.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/functest/array/arrayMerge.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/functest/array/twoDimentionArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/functest/array/twoDimentionArray.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/functest/breakDoubleLoop/BreakDoubleLoop.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/functest/breakDoubleLoop/BreakDoubleLoop.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/functest/javautilimpl/CollectionImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/functest/javautilimpl/CollectionImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/functest/javautilimpl/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/functest/javautilimpl/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/functest/javautilimpl/People.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/functest/javautilimpl/People.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/functest/jsonimpl/JSONImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/functest/jsonimpl/JSONImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/functest/listcopy/ListCopyMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/functest/listcopy/ListCopyMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/functest/listcopy/People.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/functest/listcopy/People.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/functest/map/HashmapTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/functest/map/HashmapTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/functest/nowcoder/Demo$Sub.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/functest/nowcoder/Demo$Sub.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/functest/nowcoder/Demo$Super.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/functest/nowcoder/Demo$Super.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/functest/nowcoder/Demo.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/functest/nowcoder/Demo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/functest/nowcoder/TestClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/functest/nowcoder/TestClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/functest/nullException/NullExcption.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/functest/nullException/NullExcption.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/functest/nullException/PeopleNull.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/functest/nullException/PeopleNull.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/functest/objectParser/ObjectParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/functest/objectParser/ObjectParser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/functest/objectParser/People.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/functest/objectParser/People.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/functest/set/SetBasic.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/functest/set/SetBasic.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/functest/simpledateformat/LocalThreadError$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/functest/simpledateformat/LocalThreadError$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/functest/simpledateformat/LocalThreadError.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/functest/simpledateformat/LocalThreadError.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/functest/simpledateformat/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/functest/simpledateformat/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/functest/simpledateformat/SimpleDataFormatTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/functest/simpledateformat/SimpleDataFormatTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/functest/simpledateformat/ThreadLocalForSDF$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/functest/simpledateformat/ThreadLocalForSDF$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/functest/simpledateformat/ThreadLocalForSDF.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/functest/simpledateformat/ThreadLocalForSDF.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/functest/stack/StackBasic.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/functest/stack/StackBasic.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/functest/threadAndRunable/Runner1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/functest/threadAndRunable/Runner1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/functest/threadAndRunable/Runner2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/functest/threadAndRunable/Runner2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/functest/threadAndRunable/threadTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/functest/threadAndRunable/threadTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/functest/urlencode/UrlEncode.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/functest/urlencode/UrlEncode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/how2j/InterfaceInheritance.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/how2j/InterfaceInheritance.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/how2j/InterfaceInheritanceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/how2j/InterfaceInheritanceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/leetcode/easy/addtwonumbers/AddTwoNumbers$ListNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/leetcode/easy/addtwonumbers/AddTwoNumbers$ListNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/leetcode/easy/addtwonumbers/AddTwoNumbers.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/leetcode/easy/addtwonumbers/AddTwoNumbers.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/leetcode/easy/twosum/TwoSum.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/leetcode/easy/twosum/TwoSum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/regex/Regex.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/regex/Regex.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/runoob/BasicDataTypes.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/runoob/BasicDataTypes.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/runoob/ModefierTypes.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/runoob/ModefierTypes.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/runoob/Polymorphism/Animal.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/runoob/Polymorphism/Animal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/runoob/Polymorphism/Polymorphism$Animal.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/runoob/Polymorphism/Polymorphism$Animal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/runoob/Polymorphism/Polymorphism$Cat.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/runoob/Polymorphism/Polymorphism$Cat.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/runoob/Polymorphism/Polymorphism$Dog.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/runoob/Polymorphism/Polymorphism$Dog.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/runoob/Polymorphism/Polymorphism.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/runoob/Polymorphism/Polymorphism.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/runoob/VariableTypes.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/runoob/VariableTypes.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/test/runoob/Polymorphism/AnimalTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVAFuncTest/target/classes/test/runoob/Polymorphism/AnimalTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_5_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_5_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_5_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__nz_net_ultraq_thymeleaf_thymeleaf_layout_dialect_1_2_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_8_0_23.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_8_0_23.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_logging_juli_8_0_23.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_8_0_23.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_validator_5_1_3_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_1_3_GA.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_log4j_over_slf4j_1_7_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_1_3_0_M1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_1_3_0_M1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_1_3_0_M1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_1_3_0_M1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_1_3_0_M1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_thymeleaf_1_3_0_M1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_1_3_0_M1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_validation_1_3_0_M1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_1_3_0_M1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_websocket_1_3_0_M1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_2_0_RC1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_2_0_RC1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_2_0_RC1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_2_0_RC1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_2_0_RC1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_messaging_4_2_0_RC1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_4_2_0_RC1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_2_0_RC1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_4_2_0_RC1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_websocket_4_2_0_RC1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_2_1_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_spring4_2_1_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_15.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch7_2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ch7_2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -32,15 +154,14 @@
     <select />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/wisely/Ch72Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
+            <state relative-caret-position="368">
               <caret line="26" column="23" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -52,7 +173,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1034">
+            <state relative-caret-position="1081">
               <caret line="47" column="2" selection-start-line="47" selection-start-column="2" selection-end-line="47" selection-end-column="2" />
             </state>
           </provider>
@@ -70,17 +191,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/wisely/Person.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
+            <state relative-caret-position="230">
               <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/wisely/WebMvcConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+            <state relative-caret-position="345">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -88,7 +209,31 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="322">
+              <caret line="14" column="51" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ch7_2.iml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>http://repo.spring.io</find>
+      <find>http://repo.spring.io/snapshot</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -97,14 +242,54 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/com/wisely/Ch72Application.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="ch7_2" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="ch7_2" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="ch7_2" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="ch7_2" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+          <item name="clean" type="36feed69:MavenProjectsStructure$PluginNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="ch7_2" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+          <item name="compiler" type="36feed69:MavenProjectsStructure$PluginNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="50" />
-    <option name="y" value="-19" />
-    <option name="width" value="1750" />
-    <option name="height" value="980" />
+    <option name="x" value="-9" />
+    <option name="width" value="1935" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -158,35 +343,27 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SpringBootWithThymeleaf" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringBootWithThymeleaf" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../JAVAFuncTest" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -224,16 +401,18 @@
       <workItem from="1564640892474" duration="1393000" />
       <workItem from="1564727014765" duration="756000" />
       <workItem from="1564729330831" duration="24000" />
+      <workItem from="1581319028144" duration="3655000" />
+      <workItem from="1583225475791" duration="2004000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4085000" />
+    <option name="totallyTimeSpent" value="9744000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23525469" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1423445" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -241,26 +420,27 @@
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Web" order="7" side_tool="true" />
+      <window_info id="Learn" order="8" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32956153" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39886847" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.33280507" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39886847" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3296355" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" />
-      <window_info anchor="bottom" id="Problems" order="12" />
+      <window_info anchor="bottom" id="Problems" order="12" weight="0.3296355" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" />
       <window_info anchor="bottom" id="Database Changes" order="14" />
-      <window_info anchor="bottom" id="Version Control" order="15" />
+      <window_info anchor="bottom" id="Version Control" order="15" weight="0.3296355" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" />
+      <window_info active="true" anchor="right" id="Maven" order="3" visible="true" weight="0.25717703" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Database" order="6" weight="0.32935917" />
@@ -275,7 +455,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wisely/Ch72Application.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
+        <state relative-caret-position="368">
           <caret line="26" column="23" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -285,7 +465,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1034">
+        <state relative-caret-position="1081">
           <caret line="47" column="2" selection-start-line="47" selection-start-column="2" selection-end-line="47" selection-end-column="2" />
         </state>
       </provider>
@@ -299,18 +479,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wisely/Person.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
+        <state relative-caret-position="230">
           <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch7_2.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wisely/WebMvcConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+        <state relative-caret-position="345">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="51" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
         </state>
       </provider>
     </entry>
@@ -371,7 +565,18 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>13</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
               </list>
             </option>
           </splitter-proportions>
