@@ -1,4 +1,4 @@
-package com.mesakiiyui.springdatamysql.JUnitTest;
+package com.mesakiiyui.springdatamysql.Utils.JUnitTest;
 
 public class Calculator {
     private static int result; // 静态变量，用于存储运行结果

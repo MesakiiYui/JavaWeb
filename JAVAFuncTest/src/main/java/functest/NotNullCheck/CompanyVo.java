@@ -1,22 +1,9 @@
 package functest.NotNullCheck;
 
+import lombok.Getter;
+import lombok.Setter;
+
 public class CompanyVo {
-    private Company comany;
-    private String memo;
-
-    public Company getComany() {
-        return comany;
-    }
-
-    public void setComany(Company comany) {
-        this.comany = comany;
-    }
-
-    public String getMemo() {
-        return memo;
-    }
-
-    public void setMemo(String memo) {
-        this.memo = memo;
-    }
+    @Getter @Setter private Company comany;
+    @Getter @Setter private String memo;
 }

@@ -1,15 +1,18 @@
 package com.mesakiiyui.springdatamysql.Entity;
 
-public class User {
-    private String username;
+import java.io.Serializable;
+
+public class User implements Serializable {
+    private static final long serialVersionUID = 5237730257103305078L;
+    private String userName;
     private String passwd;
 
-    public String getUsername() {
-        return username;
+    public String getUserName() {
+        return userName;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 
     public String getPasswd() {

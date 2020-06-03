@@ -1,4 +1,4 @@
-package test.com.mesakiiyui.springdatamysql.JUnitTest;
+package com.mesakiiyui.test.com.mesakiiyui.springdatamysql.JUnitTest;
 
 
 import org.junit.Test;
@@ -8,7 +8,7 @@ import tech.tablesaw.columns.numbers.NumberColumnFormatter;
 /**
  * https://juejin.im/post/5dafb39d51882502591ff883
  */
-public class dableSawTest {
+public class DableSawTest {
     @Test
     public void tableSawTest6() {
         String[] students = {"小明", "李雷", "小二"};

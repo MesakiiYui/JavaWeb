@@ -1,0 +1,44 @@
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+</head>
+<body>
+<div>
+    <span>该区域不会被刷新</span>
+    <Button id="button">刷新</Button>
+    <div id="child_view">
+        <span>该区域会被刷新</span>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+<script type = "text/javascript" th:inline="javascript">
+    /*<![CDATA[*/
+    var basePath = "http://local";
+
+    $('#button').bind('click', function () {
+        refresh();
+    });
+
+    function refresh() {
+        $.ajax({ //使用JQuery内置的Ajax方法
+            type : "post", //post请求方式
+            async : true, //异步请求（同步请求将会锁住浏览器，用户其他操作必须等待请求完成才可以执行）
+            url : "SecCode/getSecCode.do", //请求发送到ShowInfoIndexServlet处
+            data : {name:"A0001"}, //请求内包含一个key为name，value为A0001的参数；服务器接收到客户端请求时通过request.getParameter方法获取该参数值
+            dataType : "json", //返回数据形式为json
+            success : function(result) {
+                //请求成功时执行该函数内容，result即为服务器返回的json对象
+                console.log("result", result);
+                if (result != null && result.length > 0) {
+
+                }
+            }
+        })
+    }
+
+    /*]]>*/
+</script>
+</body>
+</html>

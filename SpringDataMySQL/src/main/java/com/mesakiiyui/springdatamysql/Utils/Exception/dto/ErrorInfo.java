@@ -1,4 +1,4 @@
-package com.mesakiiyui.springdatamysql.dto;
+package com.mesakiiyui.springdatamysql.Utils.Exception.dto;
 
 public class ErrorInfo<T> {
 

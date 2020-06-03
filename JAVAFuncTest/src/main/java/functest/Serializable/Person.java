@@ -1,13 +1,20 @@
 package functest.Serializable;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import java.io.Serializable;
 
 public class Person implements Serializable {
     private static final long serialVersionUID = 1L;
 
-    private Man man;
-    private String username;
-    private transient int age;
+    @Getter @Setter private Man man;
+    @Getter @Setter private String username;
+    @Getter @Setter private String name;
+    @Getter @Setter private transient int age;
+    //  @Setter(AccessLevel.PROTECTED) private String name;
+
+
 
     public Person() {
         System.out.println("person constru");
@@ -19,22 +26,7 @@ public class Person implements Serializable {
         this.age = age;
     }
 
-    public Man getMan() {
-        return man;
-    }
-    public void setMan(Man man) {
-        this.man = man;
-    }
-    public String getUsername() {
-        return username;
-    }
-    public void setUsername(String username) {
-        this.username = username;
-    }
-    public int getAge() {
-        return age;
-    }
-    public void setAge(int age) {
-        this.age = age;
+    public Person(String name) {
+        this.name = name;
     }
 }

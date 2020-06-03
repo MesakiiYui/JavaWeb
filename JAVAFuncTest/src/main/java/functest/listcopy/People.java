@@ -1,8 +1,11 @@
 package functest.listcopy;
 
+import lombok.Getter;
+import lombok.Setter;
+
 public class People {
-    private String name;
-    private Integer age;
+    @Getter @Setter private String name;
+    @Getter @Setter private Integer age;
     public People(){
 
     }
@@ -12,21 +15,6 @@ public class People {
         this.age = age;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public Integer getAge() {
-        return age;
-    }
-
-    public void setAge(Integer age) {
-        this.age = age;
-    }
 
     @Override
     public String toString() {

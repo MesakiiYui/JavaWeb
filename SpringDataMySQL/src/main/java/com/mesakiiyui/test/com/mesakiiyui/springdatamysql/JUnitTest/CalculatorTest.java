@@ -1,4 +1,4 @@
-package test.com.mesakiiyui.springdatamysql.JUnitTest; 
+package com.mesakiiyui.test.com.mesakiiyui.springdatamysql.JUnitTest;
 
 import org.junit.Test; 
 import org.junit.Before; 
@@ -8,7 +8,7 @@ import org.junit.After;
 * Calculator Tester. 
 * 
 * @author <Authors name> 
-* @since <pre>¾ÅÔÂ 23, 2019</pre> 
+* @since <pre>ï¿½ï¿½ï¿½ï¿½ 23, 2019</pre> 
 * @version 1.0 
 */ 
 public class CalculatorTest { 

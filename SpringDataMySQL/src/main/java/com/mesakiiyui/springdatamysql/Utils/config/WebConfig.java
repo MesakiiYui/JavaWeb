@@ -1,4 +1,4 @@
-package com.mesakiiyui.springdatamysql.config;
+package com.mesakiiyui.springdatamysql.Utils.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.util.ResourceUtils;
