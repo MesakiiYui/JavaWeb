@@ -1,5 +1,7 @@
 package designPattern.factory;
 
+import designPattern.bean.Shape;
+
 public class FactoryPatternDemo {
     // 实例化工厂类
 

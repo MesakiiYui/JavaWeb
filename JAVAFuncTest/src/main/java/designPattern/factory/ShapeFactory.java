@@ -1,5 +1,10 @@
 package designPattern.factory;
 
+import designPattern.bean.impl.Circle;
+import designPattern.bean.impl.Rectangle;
+import designPattern.bean.Shape;
+import designPattern.bean.impl.Square;
+
 public class ShapeFactory {
 
     //使用 getShape 方法获取形状类型的对象

@@ -25,8 +25,10 @@ public class MyArrayList{
     }
     private void arrest() {
         ArrayList al = new ArrayList();
-        for(int i = 0; i < al.size(); i +=1)
-        System.out.println(al.get(i));
+        for(int i = 0; i < al.size(); i +=1){
+            System.out.println(al.get(i));
+        }
+
     }
 
     public static void main(String[] args) throws Exception {

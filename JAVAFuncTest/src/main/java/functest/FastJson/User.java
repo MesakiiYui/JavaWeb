@@ -13,6 +13,8 @@ public class User {
     @JSONField(format = "yyyy-MM-dd HH:mm:ss")
     private Date   createTime;
 
+    private String[] ids;
+
     public Long getId() {
         return id;
     }
@@ -35,5 +37,13 @@ public class User {
 
     public void setCreateTime(Date createTime) {
         this.createTime = createTime;
+    }
+
+    public String[] getIds() {
+        return ids;
+    }
+
+    public void setIds(String[] ids) {
+        this.ids = ids;
     }
 }

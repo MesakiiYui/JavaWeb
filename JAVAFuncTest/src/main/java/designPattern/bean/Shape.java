@@ -1,4 +1,4 @@
-package designPattern.factory;
+package designPattern.bean;
 
 public interface Shape {
     void draw();

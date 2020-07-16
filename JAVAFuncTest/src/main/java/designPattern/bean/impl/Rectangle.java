@@ -1,4 +1,6 @@
-package designPattern.factory;
+package designPattern.bean.impl;
+
+import designPattern.bean.Shape;
 
 public class Rectangle implements Shape {
 
