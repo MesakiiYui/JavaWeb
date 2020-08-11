@@ -11,7 +11,7 @@ import org.junit.After;
 * @since <pre>���� 23, 2019</pre> 
 * @version 1.0 
 */ 
-public class CalculatorTest { 
+public class CalculatorTest {
 
 @Before
 public void before() throws Exception { 

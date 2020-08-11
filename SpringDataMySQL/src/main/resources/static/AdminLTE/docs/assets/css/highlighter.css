@@ -33,7 +33,7 @@ pre .nb { color: #007020 } /* Name.Builtin */
 pre .nc { color: #0e84b5; font-weight: bold } /* Name.Class */
 pre .no { color: #60add5 } /* Name.Constant */
 pre .nd { color: #555555; font-weight: bold } /* Name.Decorator */
-pre .ni { color: #d55537; font-weight: bold } /* Name.Entity */
+pre .ni { color: #d55537; font-weight: bold } /* Name.entity */
 pre .ne { color: #007020 } /* Name.Exception */
 pre .nf { color: #06287e } /* Name.Function */
 pre .nl { color: #002070; font-weight: bold } /* Name.Label */
@@ -102,7 +102,7 @@ pre .il { color: #40a070 } /* Literal.Number.Integer.Long */
 .highlight pre .nc { color: #a6e22e } /* Name.Class */
 .highlight pre .no { color: #66d9ef } /* Name.Constant */
 .highlight pre .nd { color: #a6e22e } /* Name.Decorator */
-.highlight pre .ni { color: #f8f8f2 } /* Name.Entity */
+.highlight pre .ni { color: #f8f8f2 } /* Name.entity */
 .highlight pre .ne { color: #a6e22e } /* Name.Exception */
 .highlight pre .nf { color: #a6e22e } /* Name.Function */
 .highlight pre .nl { color: #f8f8f2 } /* Name.Label */
