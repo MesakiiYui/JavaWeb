@@ -11,13 +11,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 @RequestMapping(path="/AdminLTE")
-public class StudentController {
+public class AdminLTEController {
 
     /**  通过构造器注入---begin  **/
     private StudentRepository studentRepository;
 
     @Autowired
-    public StudentController(StudentRepository studentRepository){
+    public AdminLTEController(StudentRepository studentRepository){
         this.studentRepository = studentRepository;
     }
     /** 通过构造器注入---end  **/

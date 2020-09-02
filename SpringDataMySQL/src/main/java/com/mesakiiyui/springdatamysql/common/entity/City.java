@@ -1,61 +1,34 @@
 package com.mesakiiyui.springdatamysql.common.entity;
-
+import lombok.Data;
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Table;
+import java.io.Serializable;
 
+@Data
 @Entity // This tells Hibernate to make a table out of this class
-public class City {
+@Table(name="city")
+public class City  implements Serializable {
+
+    private static final long serialVersionUID = -6384426496619531976L;
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
-    private Integer ID;
+    @Column(name = "ID")
+    private Integer id;
 
-    private String Name;
+    @Column(name = "Name")
+    private String name;
 
-    private String CountryCode;
+    @Column(name = "CountryCode")
+    private String countryCode;
 
-    private String District;
+    @Column(name = "District")
+    private String district;
 
-    private Integer Population;
+    @Column(name = "Population")
+    private Integer population;
 
-    public Integer getID() {
-        return ID;
-    }
-
-    public void setID(Integer ID) {
-        this.ID = ID;
-    }
-
-    public String getName() {
-        return Name;
-    }
-
-    public void setName(String name) {
-        Name = name;
-    }
-
-    public String getCountryCode() {
-        return CountryCode;
-    }
-
-    public void setCountryCode(String countryCode) {
-        CountryCode = countryCode;
-    }
-
-    public String getDistrict() {
-        return District;
-    }
-
-    public void setDistrict(String district) {
-        District = district;
-    }
-
-    public Integer getPopulation() {
-        return Population;
-    }
-
-    public void setPopulation(Integer population) {
-        Population = population;
-    }
 }

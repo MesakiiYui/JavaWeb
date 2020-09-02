@@ -1,72 +1,54 @@
 package com.mesakiiyui.springdatamysql.common.entity;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import org.springframework.data.annotation.CreatedDate;
+import org.springframework.data.annotation.LastModifiedDate;
+import org.springframework.data.jpa.domain.support.AuditingEntityListener;
+
+import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.EntityListeners;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import java.time.Year;
+import javax.persistence.Table;
+import java.sql.Date;
+
 @Entity
+//@AllArgsConstructor
+//@NoArgsConstructor
+@EntityListeners(AuditingEntityListener.class)
+@Data
+@Table(name = "student")
 public class Student {
     @Id
+    @Column(name = "id")
     @GeneratedValue(strategy= GenerationType.AUTO)
     private Integer id;
 
+    @Column(name = "name")
     private String name;
 
+    @Column(name = "sex")
     private String sex;
 
-    private Year birth;
+    @Column(name = "birth")
+    private Date birth;
 
+    @Column(name = "department")
     private String department;
 
+    @Column(name = "address")
     private String address;
 
+    @Column(name = "crt_dttm")
+    @CreatedDate
+    private java.util.Date crtDttm;
 
-    public Integer getId() {
-        return id;
-    }
+    @Column(name = "last_upt_dttm")
+    @LastModifiedDate
+    private java.util.Date lastUptDttm;
 
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getSex() {
-        return sex;
-    }
-
-    public void setSex(String sex) {
-        this.sex = sex;
-    }
-
-    public Year getBirth() {
-        return birth;
-    }
-
-    public void setBirth(Year birth) {
-        this.birth = birth;
-    }
-
-    public String getDepartment() {
-        return department;
-    }
-
-    public void setDepartment(String department) {
-        this.department = department;
-    }
-
-    public String getAddress() {
-        return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
-    }
 }
