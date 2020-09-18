@@ -61,5 +61,6 @@ public class HashmapTest {
             Object key = iterator_2.next();
             System.out.println("tmp.get(key) is :"+tmp.get(key));
         }
+        // map.put(ele1, map.getOrDefault(ele1, 0) + 1);
     }
 }

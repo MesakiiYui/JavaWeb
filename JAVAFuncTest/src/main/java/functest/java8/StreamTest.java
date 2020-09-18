@@ -57,6 +57,26 @@ public class StreamTest {
     }
 
     /**
+     * 创建一个固定的list,含有重复元素
+     * @return
+     */
+    private List<List<Integer>> generateTwoDimensionalList(){
+        List<Integer> list1 =new ArrayList();
+        list1.add(1);
+        list1.add(2);
+        list1.add(3);
+        List<Integer> list2 =new ArrayList();
+        list1.add(3);
+        list1.add(4);
+        list1.add(5);
+        list1.add(6);
+        List<List<Integer>> twoDimensionalList = new ArrayList<>();
+        twoDimensionalList.add(list1);
+        twoDimensionalList.add(list2);
+        return twoDimensionalList;
+    }
+
+    /**
      * stream多线程： parallelStream()：
      */
     @Test
@@ -85,6 +105,9 @@ public class StreamTest {
         log.info("count的值为{}",count);
         String output = list.stream().distinct().collect(Collectors.joining(","));
         System.out.println(output);
+        // 二维数组无效
+//        Long countDouble = this.generateTwoDimensionalList().stream().distinct().count();
+//        log.info("二维数组去重后count{}", countDouble);
 
     }
 
@@ -125,10 +148,16 @@ public class StreamTest {
      */
     @Test
     public void flatMapTest(){
+        log.info("1.简单的stream.of");
         Stream.of(Arrays.asList(1, 2, 3), Arrays.asList(2, 3, 6)).collect(Collectors.toList()).forEach(System.out::print);
+        System.out.println("#end");
+        log.info("2.flatMap");
         Stream<List<Integer>> listStream = Stream.of(Arrays.asList(1, 2, 3), Arrays.asList(2, 3, 6));
         listStream.flatMap(lists -> lists.stream()).collect(Collectors.toList()).forEach(System.out::print);
+        System.out.println("#end");
+        log.info("3.和2一样");
         Stream.of(Arrays.asList(1, 2, 3), Arrays.asList(2, 3, 6)).flatMap(lists -> lists.stream()).collect(Collectors.toList()).forEach(System.out::print);
+        System.out.println("#end");
     }
 
     /**
