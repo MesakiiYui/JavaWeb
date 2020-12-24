@@ -1,26 +1,50 @@
 package functest.set;
 
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Set;
 
 public class SetBasic {
-    public static void main(String[] args) {
-        Set<String> set=new HashSet<String>();
+    public static void main(String[] agrs){
+        //创建HashSet集合：
+        Set<String> hashSet = new HashSet<String>();
+        System.out.println("HashSet初始容量大小："+hashSet.size());
 
-        set.add("1");
-        set.add("2");
-        set.add("3");
-        set.add("1");
-        for(String i : set){
-            System.out.println(i);
+        //元素添加：
+        hashSet.add("my");
+        hashSet.add("name");
+        hashSet.add("is");
+        hashSet.add("jiaboyan");
+        hashSet.add(",");
+        hashSet.add("hello");
+        hashSet.add("world");
+        hashSet.add("!");
+        System.out.println("HashSet容量大小："+hashSet.size());
+
+        //迭代器遍历：
+        Iterator<String> iterator = hashSet.iterator();
+        while (iterator.hasNext()){
+            String str = iterator.next();
+            System.out.println(str);
         }
-        if(set.contains("2")){
-            System.out.println("contains 2");
+        //增强for循环
+        for(String str:hashSet){
+            if("jiaboyan".equals(str)){
+                System.out.println("你就是我想要的元素:"+str);
+            }
+            System.out.println(str);
         }
 
-        Set<Integer> setInt = new HashSet<Integer>();
-        int a = 1;
-        setInt.add(a);
+        //元素删除：
+        hashSet.remove("jiaboyan");
+        System.out.println("HashSet元素大小：" + hashSet.size());
+        hashSet.clear();
+        System.out.println("HashSet元素大小：" + hashSet.size());
 
+        //集合判断：
+        boolean isEmpty = hashSet.isEmpty();
+        System.out.println("HashSet是否为空：" + isEmpty);
+        boolean isContains = hashSet.contains("hello");
+        System.out.println("HashSet是否为空：" + isContains);
     }
 }

@@ -5,20 +5,43 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.1.6.RELEASE</version>
+        <version>2.1.8.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.MesakiiYui</groupId>
-    <artifactId>springdatamysql</artifactId>
+    <groupId>MesakiiYui</groupId>
+    <artifactId>mesakiiyui-data-management</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>springdatamysql</name>
-    <description>Demo project for Spring Boot</description>
+    <description>mesakiyui-data-management</description>
+	<packaging>pom</packaging>
+
+	<modules>
+		<module>mesakiiyui-data-management-starter</module>
+		<module>mesakiiyui-data-management-core</module>
+		<module>mesakiiyui-data-management-data</module>
+        <module>mesakiiyui-data-management-app</module>
+    </modules>
 
     <properties>
+		<management.version>0.0.1-SNAPSHOT</management.version>
+		<maven-jar-plugin.version>3.1.1</maven-jar-plugin.version>
         <java.version>1.8</java.version>
+        <grpc.version>1.6.1</grpc.version>
+		<spring-cloud.version>Greenwich.SR2</spring-cloud.version>
+        <protobuf.version>3.14.0</protobuf.version>
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>MesakiiYui</groupId>
+            <artifactId>mesakiiyui-data-management-starter</artifactId>
+            <version>${management.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>MesakiiYui</groupId>
+            <artifactId>mesakiiyui-data-management-core</artifactId>
+            <version>${management.version}</version>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
@@ -126,9 +149,62 @@
             <version>1.1.14</version>
         </dependency>
 
+
+        <!--protobuf  start-->
+        <dependency>
+            <groupId>io.grpc</groupId>
+            <artifactId>grpc-netty</artifactId>
+            <version>${grpc.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.grpc</groupId>
+            <artifactId>grpc-protobuf</artifactId>
+            <version>${grpc.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.grpc</groupId>
+            <artifactId>grpc-stub</artifactId>
+            <version>${grpc.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.google.protobuf</groupId>
+            <artifactId>protobuf-java</artifactId>
+            <version>${protobuf.version}</version>
+        </dependency>
+        <!--protobuf  end-->
+
+        <!--feign  start-->
+        <!--<dependency>-->
+            <!--<groupId>org.springframework.cloud</groupId>-->
+            <!--<artifactId>spring-cloud-starter-feign</artifactId>-->
+            <!--<version>1.2.2.RELEASE</version>-->
+        <!--</dependency>-->
+        <!--&lt;!&ndash; https://mvnrepository.com/artifact/com.netflix.eureka/eureka-client &ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>com.netflix.eureka</groupId>-->
+            <!--<artifactId>eureka-client</artifactId>-->
+            <!--<version>1.10.10</version>-->
+            <!--<scope>runtime</scope>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>org.springframework.cloud</groupId>-->
+            <!--<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>-->
+        <!--</dependency>-->
+        <!--feign  end-->
+
     </dependencies>
 
     <build>
+        <extensions>
+            <extension>
+                <groupId>kr.motd.maven</groupId>
+                <artifactId>os-maven-plugin</artifactId>
+                <version>1.5.0.Final</version>
+            </extension>
+        </extensions>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
@@ -140,6 +216,24 @@
                 <configuration>
                     <encoding>${project.build.sourceEncoding}</encoding>
                 </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.xolstice.maven.plugins</groupId>
+                <artifactId>protobuf-maven-plugin</artifactId>
+                <version>0.5.0</version>
+                <configuration>
+                    <protocArtifact>com.google.protobuf:protoc:${protobuf.version}:exe:${os.detected.classifier}</protocArtifact>
+                    <pluginId>grpc-java</pluginId>
+                    <pluginArtifact>io.grpc:protoc-gen-grpc-java:${grpc.version}:exe:${os.detected.classifier}</pluginArtifact>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>compile</goal>
+                            <goal>compile-custom</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
         <pluginManagement>

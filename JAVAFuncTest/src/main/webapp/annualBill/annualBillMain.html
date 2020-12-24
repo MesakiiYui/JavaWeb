@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>年度账单</title>
+    <meta charset="utf-8" >
+</head>
+<body class="Body" >
+<div class="AllWrap relative">
+
+    <div class="container" id="snapshotArea">
+        <div class="row clearfix">
+            <div class="col-md-12 column">
+                <br>
+                <br>
+            </div>
+            <div class="col-md-12 column">
+                <h1 class="text-center" style="font-size: 3.8vw;color: rgb(176,192,194);">
+                    <strong>2020年度客联中心个人“账单”</strong>
+                </h1>
+                <br>
+                <br>
+                <p class="text-left, specialFont" style="font-size: 2.6vw ;color: #ffff00;padding-left: 5%">
+                    2020年，我们共同走过一段注定不平凡的历程
+                        <br>
+                        疫情下的坚守、大灾前的坚持、综改落地前的坚定，客联人总是迎难而上
+                </p>
+            </div>
+            <div class="col-md-12 column">
+                <br>
+            </div>
+            <div class="col-md-6 column" style="color: white;padding-left: 7%;margin-right: -3%">
+                <p class="text-left, specialFont" style="font-size: 3.8vw ;color: white;">
+                    <strong>
+                        致敬辛勤耕耘的自己
+                    </strong>
+                </p>
+                <div class="has-margin">
+                    <p class="normalWhite">
+                        全年服务客户<strong id ="guestNum" class="countNum">XXX</strong>人次
+                    </p>
+                </div>
+                <div class="has-margin">
+                    <p class="normalWhite">
+                        有<strong id ="satisfyRate" class="countNum">XX%</strong>客户对我服务评价满意
+                    </p>
+                </div>
+                <div class="has-margin">
+                    <p class=" normalWhite">
+                        平均呼入时长<strong id ="inTimeAvg" class="countNum">XX</strong>秒，超过全司<strong id ="inBeatRate" class="countNum">XX%</strong>的座席
+                    </p>
+                </div>
+                <div class="has-margin">
+                    <p class=" normalWhite">
+                        平均呼出时长<strong id ="outTimeAvg" class="countNum">XX</strong>秒，超过全司<strong id ="outBeatRate" class="countNum">XX%</strong>的座席
+                    </p>
+                </div>
+                <div class="has-margin">
+                    <p class="normalWhite">
+                        最早签到时间是<strong id ="earliest" class="countNum">XX:XX:XX</strong>
+                    </p>
+                </div>
+                <div class="has-margin">
+                    <p class="normalWhite">
+                        最晚签出时间是<strong id ="latest" class="countNum">XX:XX:XX</strong>
+                    </p>
+                </div>
+                <div class="has-margin">
+                    <p class="normalWhite">
+                        最长通话时长是<strong id ="longestCallT" class="countNum">XX</strong >秒
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6 column" style="padding-left: 0;padding-right: 0">
+                <div id="radarArea" style="width:45vw;height:33vw;padding-left: 0;padding-right: 0;z-index: 9999">
+
+
+                </div>
+            </div>
+        </div>
+        <div class="row clearfix">
+            <div class="col-md-12 column">
+                <p class="text-center" style="font-size: 3.8vw ;color: #fdfdfe;padding-top: 3%">
+                    <strong style="visibility:hidden;"> -----------------------</strong>
+                    <strong class="specialFont">
+                        2021年，期待遇见更好的自己！
+                    </strong>
+                </p>
+            </div>
+        </div>
+        <div class="row clearfix">
+            <!--<div class="col-md-12 column" style="color: white">-->
+                <!--<small><i>数据统计范围：2020.1.1-2020.12.20</i></small>-->
+            <!--</div>-->
+            <div class="col-md-12 column text-right">
+                <!--<button id="downloadBtn" type="button" class="btn btn-default" onclick="saveCanvas()">保存为图片</button>-->
+                <button title="保存为图片" id="downloadBtn" class="btn btn-default" onclick="saveCanvas()">保 存</button>
+                <button title="保存为图片" id="downloadBtn2" class="btn btn-default" onclick="popUp()">保 存</button>
+                <a href="" download="2020年度客联中心个人账单.png" id="download"></a>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+</body>
+<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="./annualBill.css">
+<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdn.staticfile.org/echarts/4.3.0/echarts.min.js"></script>
+<script src="https://cdn.jsdelivr.net/bluebird/latest/bluebird.js"></script>
+<script src="https://cdn.bootcss.com/html2canvas/0.5.0-beta3/html2canvas.js"></script>
+<script src="./radarMap.js"></script>
+
+<script>
+    function saveCanvas() {
+        var userAgent = navigator.userAgent;
+        var isIE = userAgent.indexOf("compatible") > -1 && userAgent.indexOf("MSIE") > -1;
+        html2canvas($('.Body'), {
+            allowTaint: true,
+            taintTest: false,
+            useCORS:true,//火狐浏览器添加项
+            onrendered: function (canvas) {
+
+                var image = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
+                var userAgent = navigator.userAgent;
+                //判断是否是IE11
+                if(-1 !== userAgent.indexOf("Trident")){
+                    var arr = image.split(',');
+                    var mime = arr[0].match(/:(.*?);/)[1];
+                    var bstr = atob(arr[1]);
+                    var n = bstr.length;
+                    var u8arr = new Uint8Array(n);
+                    while(n--){
+                        u8arr[n] = bstr.charCodeAt(n);
+                    }
+                    window.navigator.msSaveBlob(new Blob([u8arr], {type:mime}), "download.png");
+                }else{
+                    canvas.id = "mycanvas";
+                    //生成base64图片数据
+                    var dataUrl = canvas.toDataURL();
+                    var newImg = document.createElement("img");
+                    newImg.src = dataUrl;
+                    var a = $("<a></a>").attr("href", dataUrl).attr("download", "img.png");
+                    $("body").append(a);//火狐浏览器添加项
+                    a[0].click();
+                    a.remove();
+                }
+            }
+        });
+
+
+        // html2canvas($(".Body")).then(function(canvas) {
+        //     var imgUri = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
+        //     $("#download").attr("href",imgUri);
+        //     console.log(imgUri);
+        //     document.getElementById("download").click();
+        // });
+    };
+    function popUp() {
+        var url = "http://www.baidu.com";
+        var sfeature = 'location=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes,resizable=no,top=100px,left=100px,width=1024px,height=768px';
+        window.open(url,'_blank',sfeature);
+    }
+</script>
+</html>

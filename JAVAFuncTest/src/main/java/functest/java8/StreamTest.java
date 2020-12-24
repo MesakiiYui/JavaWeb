@@ -88,7 +88,6 @@ public class StreamTest {
 
     /**
      * distinct   count   collect
-     *
      * stream的级联操作和终止操作---distinct && count
      * distinct（）返回由该流的不同元素组成的流。
      * 如果distinct（）正在处理有序流，那么对于重复元素，将保留以遭遇顺序首先出现的元素，并且以这种方式选择不同元素是稳定的。

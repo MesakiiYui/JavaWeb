@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>文档标题</title>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/bluebird/latest/bluebird.js"></script>
+    <script src="https://cdn.bootcss.com/html2canvas/0.5.0-beta3/html2canvas.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/canvas2image@1.0.5/canvas2image.js"></script> -->
+    <!-- <script src = "https://cdn.polyfill.io/v2/polyfill.min.js"></script> -->
+    <style>
+        a {
+            cursor: pointer;
+            color: rgb(85, 26, 139);
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<div id="content" style="width: 300px; height: 300px; margin: 10px; background: red; border: 5px solid gray;">
+    <h1>hello html2canvas!</h1>
+</div>
+<script>
+    $("#content").on("click", function () {
+
+        var userAgent = navigator.userAgent;
+        var isIE = userAgent.indexOf("compatible") > -1 && userAgent.indexOf("MSIE") > -1;
+        html2canvas($('#content'), {
+            allowTaint: true,
+            taintTest: false,
+            useCORS:true,//火狐浏览器添加项
+            onrendered: function (canvas) {
+
+                var image = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
+                var userAgent = navigator.userAgent;
+                //判断是否是IE11
+                debugger
+                if(-1 !== userAgent.indexOf("Trident")){
+                    var arr = image.split(',');
+                    var mime = arr[0].match(/:(.*?);/)[1];
+                    var bstr = atob(arr[1]);
+                    var n = bstr.length;
+                    var u8arr = new Uint8Array(n);
+                    while(n--){
+                        u8arr[n] = bstr.charCodeAt(n);
+                    }
+                    window.navigator.msSaveBlob(new Blob([u8arr], {type:mime}), "download.png");
+                }else{
+                    canvas.id = "mycanvas";
+                    //生成base64图片数据
+                    var dataUrl = canvas.toDataURL();
+                    var newImg = document.createElement("img");
+                    newImg.src = dataUrl;
+                    var a = $("<a></a>").attr("href", dataUrl).attr("download", "img.png");
+                    $("body").append(a);//火狐浏览器添加项
+                    a[0].click();
+                    a.remove();
+                }
+            }
+        });
+    });
+</script>
+</body>
+</html>

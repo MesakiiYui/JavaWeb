@@ -4,6 +4,10 @@ import com.alibaba.fastjson.JSON;
 import lombok.extern.slf4j.Slf4j;
 
 import java.security.SecureRandom;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Set;
+
 /**
  * @Author: jintienan
  * @Date: 2020/9/15 16:18
@@ -55,6 +59,21 @@ public class BasicSort {
      * 插入排序
      * 将数组右边的数据一个个插入到左边
      * 如果用linklist会比较好做，用数组也是可以的
+     *
+     *
+     * 将第一个元素标记为已排序
+     *
+     * 遍历每个没有排序过的元素
+     *
+     *   “提取” 元素 X
+     *
+     *   i = 最后排序过元素的指数 到 0 的遍历
+     *
+     *     如果现在排序过的元素 > 提取的元素
+     *
+     *       将排序过的元素向右移一格
+     *
+     *     否则：插入提取的元素
      * @param nums
      * @return
      */
@@ -68,6 +87,7 @@ public class BasicSort {
                     nums[j] = temp;
                 }
             }
+            log.info("插入排序，一轮for循环结束:"+ JSON.toJSONString(nums));
         }
         return nums;
     }
@@ -80,14 +100,17 @@ public class BasicSort {
     public int[] shellSort(int[] nums){
         int len = nums.length;
         for(int gap  = (int)Math.floor(len/2); gap > 0; gap = (int)Math.floor(gap/2)){
+            //接下来开始进行插入排序
+            // 为什么i从gap开始？假设gap=5,则nums[0]->nums[gap-1]分别是5个序列的第一个值
             for(int i = gap; i < nums.length; i += 1){
                 int temp = nums[i];
                 int j = i - gap;
+                log.info("while即将开始j={}, i={},gap={}",j, i, gap);
                 while(j >= 0 && nums[j] > temp){
-                    // 这个while里面其实是插入排序的过程
-                    nums[j + gap] = nums[j];
+                    // 这个while里面其实是插入排序的过程，以temp为基准，在它左边的且比它大的都会往往右插，直到遇见比它小的
+                    nums[j + gap] = nums[j];// 插入排序的重要中间过程，temp存储的待插入的值，我们要将序列中的值逐个的往后移动，将temp插到这样一个位置，左边的比它小，右边的比它大
                     j -= gap;
-                    log.info("while内       "+JSON.toJSONString(nums));
+                    log.info("while内插入后 "+JSON.toJSONString(nums));
                 }
                 nums[j + gap] = temp;
                 log.warn("while结束     "+JSON.toJSONString(nums)+ "j=" + j +", gap=" + gap);

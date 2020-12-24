@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <modules>
+        <module>../mesakiiyui-data-management-data</module>
+    </modules>
+    <parent>
+        <groupId>MesakiiYui</groupId>
+        <artifactId>mesakiiyui-data-management</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+        <relativePath>../</relativePath> <!-- lookup parent from repository -->
+    </parent>
+    <artifactId>mesakiiyui-data-management-starter</artifactId>
+    <name>data-management-starter</name>
+    <description>data-management-starter</description>
+    <packaging>pom</packaging>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>com.cpic.p17</groupId>-->
+            <!--<artifactId>p17-property-kepler-data</artifactId>-->
+        <!--</dependency>-->
+    </dependencies>
+
+    <build>
+        <finalName>data-management-app</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <mainClass>com.SpringdatamysqlApplication</mainClass>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+
+</project>

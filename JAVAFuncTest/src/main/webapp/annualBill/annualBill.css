@@ -1,0 +1,46 @@
+body {
+
+    background-image: url("./bg1.png");
+
+    background-position: center 0;
+
+    background-repeat: no-repeat;
+
+    background-attachment: fixed;
+
+    -webkit-background-size: cover;
+
+    -o-background-size: cover;
+
+    -moz-background-size:100% 100%;
+
+    background-size:100% 100%;
+
+
+}
+
+.countNum {
+    color: #fd0001;
+    font-size: 2.2vw;
+}
+
+#downloadBtn{
+    background-color:transparent;
+    border-style:solid;
+    color: white;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.specialFont{
+    font-family: "STXingkai", Times, serif;
+
+}
+
+.normalWhite{
+    font-size: 1.8vw;
+}
+.has-margin{
+    margin-top: 3%;
+}
