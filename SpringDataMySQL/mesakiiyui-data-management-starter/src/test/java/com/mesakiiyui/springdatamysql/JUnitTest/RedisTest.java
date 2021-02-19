@@ -1,7 +1,7 @@
 package com.mesakiiyui.springdatamysql.JUnitTest;
 
-import com.mesakiiyui.springdatamysql.common.entity.User;
 import com.mesakiiyui.dm.common.utils.redis.RedisUtils;
+import com.mesakiiyui.dm.entity.User;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.slf4j.Logger;

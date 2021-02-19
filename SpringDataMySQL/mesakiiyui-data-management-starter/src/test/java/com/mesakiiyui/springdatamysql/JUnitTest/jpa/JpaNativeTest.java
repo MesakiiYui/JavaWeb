@@ -2,7 +2,7 @@ package com.mesakiiyui.springdatamysql.JUnitTest.jpa;
 
 import com.SpringdatamysqlApplication;
 import com.alibaba.fastjson.JSON;
-import com.mesakiiyui.springdatamysql.common.entity.Student;
+import com.mesakiiyui.dm.entity.Student;
 import com.mesakiiyui.dm.repo.StudentRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;

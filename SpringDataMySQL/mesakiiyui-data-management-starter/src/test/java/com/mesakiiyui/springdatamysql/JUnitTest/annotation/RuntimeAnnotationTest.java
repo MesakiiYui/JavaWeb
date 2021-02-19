@@ -1,7 +1,7 @@
 package com.mesakiiyui.springdatamysql.JUnitTest.annotation;
-import com.mesakiiyui.springdatamysql.common.entity.common.annotation.ClassInfo;
-import com.mesakiiyui.springdatamysql.common.entity.common.annotation.FieldInfo;
-import com.mesakiiyui.springdatamysql.common.entity.common.annotation.MethodInfo;
+import com.mesakiiyui.dm.entity.common.annotation.ClassInfo;
+import com.mesakiiyui.dm.entity.common.annotation.FieldInfo;
+import com.mesakiiyui.dm.entity.common.annotation.MethodInfo;
 import org.junit.Test;
 
 import java.lang.reflect.Constructor;

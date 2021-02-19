@@ -2,7 +2,7 @@ package com.mesakiiyui.springdatamysql.JUnitTest.protobuf;
 
 import com.SpringdatamysqlApplication;
 import com.alibaba.fastjson.JSON;
-import com.mesakiiyui.springdatamysql.common.service.protobuf.AddressBookProtos;
+import com.mesakiiyui.dm.entity.AddressBookProtos;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.junit.runner.RunWith;

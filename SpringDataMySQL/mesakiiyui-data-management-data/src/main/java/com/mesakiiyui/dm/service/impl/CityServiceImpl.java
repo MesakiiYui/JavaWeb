@@ -1,7 +1,7 @@
 package com.mesakiiyui.dm.service.impl;
 
+import com.mesakiiyui.dm.entity.City;
 import com.mesakiiyui.dm.service.CityService;
-import com.mesakiiyui.springdatamysql.common.entity.City;
 import com.mesakiiyui.dm.repo.CityRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;

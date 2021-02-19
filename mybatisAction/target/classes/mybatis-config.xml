@@ -35,19 +35,6 @@
     </environments>
 
     <mappers>
-<!--        <mapper class="com.mesakiiyui.mybatisaction.mapper.CountryMapper"/>-->
-<!--        <mapper class="com.mesakiiyui.mybatisaction.mapper.SysPrivilegeMapper"/>-->
-<!--        <mapper class="com.mesakiiyui.mybatisaction.mapper.SysPrivilegeProvider"/>-->
-<!--        <mapper class="com.mesakiiyui.mybatisaction.mapper.SysRoleMapper"/>-->
-<!--        <mapper class="com.mesakiiyui.mybatisaction.mapper.SysRolePrivilegeMapper"/>-->
-<!--        <mapper class="com.mesakiiyui.mybatisaction.mapper.SysUserMapper"/>-->
-<!--        <mapper class="com.mesakiiyui.mybatisaction.mapper.SysUserRoleMapper"/>-->
-<!--        <mapper resource="com/mesakiiyui/mybatisaction/mapper/CountryMapper.xml"/>-->
-<!--        <mapper resource="com/mesakiiyui/mybatisaction/mapper/SysUserMapper.xml"/>-->
-<!--        <mapper resource="com/mesakiiyui/mybatisaction/mapper/SysRoleMapper.xml"/>-->
-<!--        <mapper resource="com/mesakiiyui/mybatisaction/mapper/SysPrivilegeMapper.xml"/>-->
-<!--        <mapper resource="com/mesakiiyui/mybatisaction/mapper/SysUserRoleMapper.xml"/>-->
-<!--        <mapper resource="com/mesakiiyui/mybatisaction/mapper/SysRolePrivilegeMapper.xml"/>-->
         <package name="com.mesakiiyui.mybatisaction.mapper"/>
     </mappers>
 </configuration>

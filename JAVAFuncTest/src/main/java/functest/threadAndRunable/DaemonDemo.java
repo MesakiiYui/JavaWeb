@@ -12,7 +12,7 @@ package functest.threadAndRunable;
  *
  * 线程可以通过setDaemon(true)的方法将线程设置为守护线程。并且需要注意的是设置守护线程要先于start()方法，否则会报
  *
- * Exception in thread "main" java.lang.IllegalThreadStateException
+ * exception in thread "main" java.lang.IllegalThreadStateException
  * at java.lang.Thread.setDaemon(Thread.java:1365)
  * at learn.DaemonDemo.main(DaemonDemo.java:19)
  *

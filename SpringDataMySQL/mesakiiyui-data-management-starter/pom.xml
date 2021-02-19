@@ -2,9 +2,6 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <modules>
-        <module>../mesakiiyui-data-management-data</module>
-    </modules>
     <parent>
         <groupId>MesakiiYui</groupId>
         <artifactId>mesakiiyui-data-management</artifactId>
@@ -14,7 +11,7 @@
     <artifactId>mesakiiyui-data-management-starter</artifactId>
     <name>data-management-starter</name>
     <description>data-management-starter</description>
-    <packaging>pom</packaging>
+    <packaging>jar</packaging>
 
     <dependencies>
         <dependency>
@@ -22,10 +19,19 @@
             <artifactId>lombok</artifactId>
             <optional>true</optional>
         </dependency>
-        <!--<dependency>-->
-            <!--<groupId>com.cpic.p17</groupId>-->
-            <!--<artifactId>p17-property-kepler-data</artifactId>-->
-        <!--</dependency>-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>MesakiiYui</groupId>
+            <artifactId>mesakiiyui-data-management-app</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>MesakiiYui</groupId>
+            <artifactId>mesakiiyui-data-management-data</artifactId>
+        </dependency>
     </dependencies>
 
     <build>

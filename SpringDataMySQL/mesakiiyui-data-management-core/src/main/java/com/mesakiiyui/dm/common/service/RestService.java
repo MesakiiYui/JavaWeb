@@ -1,6 +1,6 @@
 package com.mesakiiyui.dm.common.service;
 
-import com.mesakiiyui.springdatamysql.common.entity.JsonpPost;
+import com.mesakiiyui.dm.entity.JsonpPost;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
 import org.springframework.stereotype.Service;

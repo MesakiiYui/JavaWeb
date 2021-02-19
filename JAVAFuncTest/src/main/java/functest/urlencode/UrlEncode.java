@@ -8,15 +8,15 @@ public class UrlEncode {
     public static void main(String[] args) {
 //        前端得到： %25E6%2596%25B9%2520%25E5%25BC%258F
 //        后端得到： %E6%96%B9%20%E5%BC%8F
-//        String a = "%25E6%2596%25B9%2520%25E5%25BC%258F";
-//        String b = "%E6%96%B9%20%E5%BC%8F";
+//        string a = "%25E6%2596%25B9%2520%25E5%25BC%258F";
+//        string b = "%E6%96%B9%20%E5%BC%8F";
 //        System.out.println("\n 采用utf-8字符集:");
-//        String urlStr = URLEncoder.encode(b);
+//        string urlStr = URLEncoder.encode(b);
 //        System.out.println(urlStr.equals(a) );
 //        System.out.println("\n 采用GBK字符集:");
-//        String urlStr2 = URLEncoder.encode("天津大学", "GBK");
+//        string urlStr2 = URLEncoder.encode("天津大学", "GBK");
 //        System.out.println(urlStr2);
-//        String keyWord = URLDecoder.decode("%E5%A4%A9%E6%B4%A5%E5%A4%A7%E5%AD%A6+Rico", "UTF-8");
+//        string keyWord = URLDecoder.decode("%E5%A4%A9%E6%B4%A5%E5%A4%A7%E5%AD%A6+Rico", "UTF-8");
 //        System.out.println(keyWord);
 //        System.out.println("\n 采用GBK字符集进行解码:");
 //        System.out.println(URLDecoder.decode("%E5%A4%A9%E6%B4%A5%E5%A4%A7%E5%AD%A6+Rico", "GBK"));
@@ -24,7 +24,7 @@ public class UrlEncode {
         // URLEncoder.encode(a);
         // 前端 %25E6%259D%258E%2520%25E6%2599%2593%25E4%25BD%25B3
         // 后端 %E6%9D%8E%20%E6%99%93%E4%BD%B3 -- 李晓佳  --  %C0%EE+%CF%FE%BC%D1
-        // String ss1 =URLEncoder.encode(URLEncoder.encode("方式 ","UTF-8"));  后端的加码
+        // string ss1 =URLEncoder.encode(URLEncoder.encode("方式 ","UTF-8"));  后端的加码
         String a = "%E6%9D%8E%20%E6%99%93%E4%BD%B3";
         String b = "";
         String c = "";

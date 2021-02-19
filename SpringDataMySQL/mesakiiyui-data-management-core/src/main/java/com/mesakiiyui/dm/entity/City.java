@@ -1,4 +1,4 @@
-package com.mesakiiyui.springdatamysql.common.entity;
+package com.mesakiiyui.dm.entity;
 import lombok.Data;
 import javax.persistence.Column;
 import javax.persistence.Entity;

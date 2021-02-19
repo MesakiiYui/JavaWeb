@@ -1,4 +1,4 @@
-package com.mesakiiyui.springdatamysql.common.entity.common.annotation;
+package com.mesakiiyui.dm.entity.common.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

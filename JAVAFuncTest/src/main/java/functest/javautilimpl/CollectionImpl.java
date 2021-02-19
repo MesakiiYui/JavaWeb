@@ -77,10 +77,10 @@ public class CollectionImpl {
         System.out.println("用removeIf取出长度大于2的字符串后list为"+list);
 
 //      可以看到，foreach与forEachRemaining是可以依托于迭代器通过Lamdba遍历的，其中forEachRemaining只能用一次
-//      it.forEachRemaining(String->System.out.print(String+" "));表示用迭代器遍历list中的String元素，适合用于容器的遍历
+//      it.forEachRemaining(string->System.out.print(string+" "));表示用迭代器遍历list中的String元素，适合用于容器的遍历
 //      add与addAll,remove与removeAll有类似的区别，add后面接具体的字符串，addAll后面接list,set等
 //      System.out.println("list是否包含set "+list.containsAll(set));判断容器间是否互相包含用contains
-//      list.removeIf(ele->((String)ele).length()>2);这是另一种Lamdba表达式，ele表示元素，效果是去掉list中所有长度大于2的元素
+//      list.removeIf(ele->((string)ele).length()>2);这是另一种Lamdba表达式，ele表示元素，效果是去掉list中所有长度大于2的元素
 
     }
 

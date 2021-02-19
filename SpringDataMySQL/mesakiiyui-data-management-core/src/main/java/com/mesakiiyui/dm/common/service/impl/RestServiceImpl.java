@@ -1,9 +1,9 @@
 package com.mesakiiyui.dm.common.service.impl;
 
 
-import com.mesakiiyui.springdatamysql.common.entity.JsonpPost;
 import com.mesakiiyui.dm.common.service.RestService;
 import com.mesakiiyui.dm.common.utils.constant.EnvironmentVariable;
+import com.mesakiiyui.dm.entity.JsonpPost;
 import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;

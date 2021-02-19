@@ -1,8 +1,8 @@
 package com.mesakiiyui.dm.controller;
 
 import com.mesakiiyui.dm.common.utils.common.ApiResponse;
+import com.mesakiiyui.dm.entity.City;
 import com.mesakiiyui.dm.service.CityService;
-import com.mesakiiyui.springdatamysql.common.entity.City;
 import com.mesakiiyui.dm.repo.CityRepository;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;

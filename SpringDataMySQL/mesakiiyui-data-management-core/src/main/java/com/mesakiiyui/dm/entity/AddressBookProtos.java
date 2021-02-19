@@ -658,7 +658,7 @@ public final class AddressBookProtos {
                   AddressBookProtos.Person.PhoneNumber.class, AddressBookProtos.Person.PhoneNumber.Builder.class);
         }
 
-        // Construct using com.mesakiiyui.springdatamysql.common.service.protobuf.AddressBookProtos.Person.PhoneNumber.newBuilder()
+        // Construct using com.mesakiiyui.dm.common.service.protobuf.AddressBookProtos.Person.PhoneNumber.newBuilder()
         private Builder() {
           maybeForceBuilderInitialization();
         }
@@ -1309,7 +1309,7 @@ public final class AddressBookProtos {
                 AddressBookProtos.Person.class, AddressBookProtos.Person.Builder.class);
       }
 
-      // Construct using com.mesakiiyui.springdatamysql.common.service.protobuf.AddressBookProtos.Person.newBuilder()
+      // Construct using com.mesakiiyui.dm.common.service.protobuf.AddressBookProtos.Person.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -2305,7 +2305,7 @@ public final class AddressBookProtos {
                 AddressBookProtos.AddressBook.class, AddressBookProtos.AddressBook.Builder.class);
       }
 
-      // Construct using com.mesakiiyui.springdatamysql.common.service.protobuf.AddressBookProtos.AddressBook.newBuilder()
+      // Construct using com.mesakiiyui.dm.common.service.protobuf.AddressBookProtos.AddressBook.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }

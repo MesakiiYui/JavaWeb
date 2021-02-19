@@ -1,6 +1,6 @@
 package com.mesakiiyui.dm.service;
 
-import com.mesakiiyui.springdatamysql.common.entity.City;
+import com.mesakiiyui.dm.entity.City;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 

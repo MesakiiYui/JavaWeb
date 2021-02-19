@@ -56,7 +56,7 @@ public class Generics {
         return max; // 返回最大对象
     }
 
-    // 类型通配符一般是使用?代替具体的类型参数。例如 List<?> 在逻辑上是List<String>,List<Integer> 等所有List<具体类型实参>的父类。
+    // 类型通配符一般是使用?代替具体的类型参数。例如 list<?> 在逻辑上是List<string>,list<Integer> 等所有List<具体类型实参>的父类。
     public static void getData(List<?> data) {
         System.out.println("data :" + data.get(0));
     }

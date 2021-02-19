@@ -2,8 +2,8 @@ package com.mesakiiyui.springdatamysql.JUnitTest.jpa;
 
 import com.SpringdatamysqlApplication;
 import com.alibaba.fastjson.JSON;
+import com.mesakiiyui.dm.entity.City;
 import com.mesakiiyui.dm.service.CityService;
-import com.mesakiiyui.springdatamysql.common.entity.City;
 import com.mesakiiyui.dm.repo.CityRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Before;

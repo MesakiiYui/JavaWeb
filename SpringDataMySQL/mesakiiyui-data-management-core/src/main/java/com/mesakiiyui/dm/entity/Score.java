@@ -1,4 +1,4 @@
-package com.mesakiiyui.springdatamysql.common.entity;
+package com.mesakiiyui.dm.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

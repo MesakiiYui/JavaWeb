@@ -25,3 +25,11 @@
 
 [参考教程](https://zhuanlan.zhihu.com/p/25174418)
 
+10.aop 做controller拦截
+
+见AopConfig.java,目前的效果是，打印获得请求参数，请求发送数据，返回数据等
+
+11.scope测试
+
+ScopeTest.java
+

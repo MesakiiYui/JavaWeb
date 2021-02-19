@@ -3,7 +3,7 @@ package functest.array;
 public class arrayGenerate {
 
     public static boolean canPlaceFlowers(int[] flowerbed, int n) {
-        // String[] c= new String[a.length+b.length];
+        // string[] c= new string[a.length+b.length];
         // System.arraycopy(a, 0, c, 0, a.length);
         // System.arraycopy(b, 0, c, a.length, b.length);
         // return c;

@@ -104,7 +104,7 @@ public class WordCount  extends Configured implements Tool {
     public static void main(String[] args) {
 
         //当打包成 jar 之前 记得注释掉
-//        args = new String[]{
+//        args = new string[]{
 //                "hdfs://bigdata-pro01.lcy.com:9000/user/hdfs/wordcount.txt",
 //                "hdfs://bigdata-pro01.lcy.com:9000/user/hdfs/output"
 //        };

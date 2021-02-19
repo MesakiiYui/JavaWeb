@@ -167,4 +167,76 @@ $(function () {
         $jsontipJavaBasic.html(strHtmlJavaBasic);//显示处理后的数据
     });
 
+    $.getJSON("./../data/interviewAnnotation.json", function (data) {
+        console.log("data", data);
+        var $jsontipAnnotation = $("#annotationContent");
+        var strHtmlAnnotation = "";//存储数据的变量
+        $jsontipAnnotation.empty();//清空内容
+        var annotationIndex = 0;
+        $.each(data, function (index, info) {
+            console.log(index, info);
+            if(info.category === 'annotation'){
+                annotationIndex += 1;
+                strHtmlAnnotation += "<div class=\"card\">" +
+                    "<a class=\"card-link\" data-toggle=\"collapse\" href=\"#collapse"+annotationIndex+"\">" +
+                    annotationIndex + ".  " + info.qes +
+                    "</a>" +
+                    "</div>" +
+                    "<div id=\"collapse"+annotationIndex+"\" class=\"collapse\" data-parent=\"#accordion\">" +
+                    "<div class=\"card-body\">" +
+                    info.ans +
+                    "</div></div></div></br>"
+            }
+        });
+        $jsontipAnnotation.html(strHtmlAnnotation);//显示处理后的数据
+    });
+
+    $.getJSON("./../data/interviewMq.json", function (data) {
+        console.log("data", data);
+        var $jsontipMq = $("#mqContent");
+        var strHtmlMq = "";//存储数据的变量
+        $jsontipMq.empty();//清空内容
+        var mqIndex = 0;
+        $.each(data, function (index, info) {
+            console.log(index, info);
+            if(info.category === 'mq'){
+                mqIndex += 1;
+                strHtmlMq += "<div class=\"card\">" +
+                    "<a class=\"card-link\" data-toggle=\"collapse\" href=\"#collapse"+mqIndex+"\">" +
+                    mqIndex + ".  " + info.qes +
+                    "</a>" +
+                    "</div>" +
+                    "<div id=\"collapse"+mqIndex+"\" class=\"collapse\" data-parent=\"#accordion\">" +
+                    "<div class=\"card-body\">" +
+                    info.ans +
+                    "</div></div></div></br>"
+            }
+        });
+        $jsontipMq.html(strHtmlMq);//显示处理后的数据
+    });
+
+    $.getJSON("./../data/interviewConcurrency.json", function (data) {
+        console.log("interviewConcurrency", data);
+        var $jsontipConcurrency = $("#concurrencyContent");
+        var strHtmlConcurrency = "";//存储数据的变量
+        $jsontipConcurrency.empty();//清空内容
+        var concurrencyIndex = 0;
+        $.each(data, function (index, info) {
+            console.log(index, info);
+            if(info.category === 'concurrency'){
+                concurrencyIndex += 1;
+                strHtmlConcurrency += "<div class=\"card\">" +
+                    "<a class=\"card-link\" data-toggle=\"collapse\" href=\"#collapse"+concurrencyIndex+"\">" +
+                    concurrencyIndex + ".  " + info.qes +
+                    "</a>" +
+                    "</div>" +
+                    "<div id=\"collapse"+concurrencyIndex+"\" class=\"collapse\" data-parent=\"#accordion\">" +
+                    "<div class=\"card-body\">" +
+                    info.ans +
+                    "</div></div></div></br>"
+            }
+        });
+        $jsontipConcurrency.html(strHtmlConcurrency);//显示处理后的数据
+    });
+
 })

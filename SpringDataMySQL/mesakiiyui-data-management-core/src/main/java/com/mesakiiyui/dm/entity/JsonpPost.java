@@ -1,4 +1,4 @@
-package com.mesakiiyui.springdatamysql.common.entity;
+package com.mesakiiyui.dm.entity;
 
 /**
  * https://jsonplaceholder.typicode.com/posts/{id}

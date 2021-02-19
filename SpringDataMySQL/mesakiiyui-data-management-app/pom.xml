@@ -3,10 +3,30 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
-    <groupId>MesakiiYui</groupId>
+    <parent>
+        <groupId>MesakiiYui</groupId>
+        <artifactId>mesakiiyui-data-management</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+        <relativePath>../</relativePath> <!-- lookup parent from repository -->
+    </parent>
     <artifactId>mesakiiyui-data-management-app</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-
+    <name>data-management-app</name>
+    <description>data-management-app</description>
+    <packaging>jar</packaging>
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>MesakiiYui</groupId>
+            <artifactId>mesakiiyui-data-management-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>MesakiiYui</groupId>
+            <artifactId>mesakiiyui-data-management-data</artifactId>
+        </dependency>
+    </dependencies>
 
 </project>

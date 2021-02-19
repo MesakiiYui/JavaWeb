@@ -1,4 +1,4 @@
-package com.mesakiiyui.springdatamysql.common.entity;
+package com.mesakiiyui.dm.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -17,8 +17,8 @@ import javax.persistence.Table;
 import java.sql.Date;
 
 @Entity
-//@AllArgsConstructor
-//@NoArgsConstructor
+@AllArgsConstructor
+@NoArgsConstructor
 @EntityListeners(AuditingEntityListener.class)
 @Data
 @Table(name = "student")

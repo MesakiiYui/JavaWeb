@@ -1,6 +1,6 @@
 package com.mesakiiyui.dm.repo;
 
-import com.mesakiiyui.springdatamysql.common.entity.Student;
+import com.mesakiiyui.dm.entity.Student;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
