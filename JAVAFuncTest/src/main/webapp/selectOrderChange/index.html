@@ -9,17 +9,22 @@
 
 <form action="demo-form.php">
     <select id = "mySelect" name="cars">
+        <option value="000" selected>请选择</option>
         <option value="001">一</option>
         <option value="002">二</option>
         <option value="003">三</option>
         <option value="004">四</option>
-        <option value="a">哎</option>
-        <option value="b">比</option>
-        <option value="c">噻</option>
+        <option value="x">我要去前面</option>
+        <option value="a">A</option>
+        <option value="b">B</option>
+        <option value="c">C</option>
+
     </select>
     <input type="submit">
 </form>
 <button onclick="myFunction()">点我</button>
+<button onclick="changeOrder()">修改顺序</button>
+<button onclick="getSelectVal()">获取选中值</button>
 </body>
 <script src=./index.js></script>
 <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"/>

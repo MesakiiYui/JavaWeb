@@ -1,5 +1,11 @@
 package functest.threadAndRunable;
 
+import leetcode.easy.addtwonumbers.AddTwoNumbers;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
@@ -24,9 +30,8 @@ public class ThreadPoolExecutorDemo {
                 TimeUnit.SECONDS,// 等待时间的单位为 TimeUnit.SECONDS。
                 new ArrayBlockingQueue<>(QUEUE_CAPACITY),// 任务队列为 ArrayBlockingQueue，并且容量为 100;
                 new ThreadPoolExecutor.CallerRunsPolicy());// 饱和策略为 CallerRunsPolicy。
-
         for (int i = 0; i < 10; i++) {
-            //创建WorkerThread对象（WorkerThread类实现了Runnable 接口）
+            //创建WorkerThread对象（WorkerThread类实现了Runnable接口）
             Runnable worker = new MyRunnable("" + i);
             //执行Runnable
             executor.execute(worker);
@@ -36,5 +41,14 @@ public class ThreadPoolExecutorDemo {
         while (!executor.isTerminated()) {
         }
         System.out.println("Finished all threads");
+        List<Integer> ansList = new ArrayList<Integer>();
+        int[] ansArr =  new int[3];
+        int b = ansArr.length;
+        int a = 1;
+        ansList.add(a);
+
+
     }
 }
+
+

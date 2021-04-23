@@ -16,13 +16,68 @@
   },
   {
     "category": "concurrency",
-    "qes": "",
-    "ans": ""
+    "qes": "多线程一定快吗？",
+    "ans": "对于简单的多线程任务，可以发现，当并发执行累加操作不超过百万次时，速度会比串行执行累加\n操作要慢。那么，为什么并发执行的速度会比串行慢呢？这是因为线程有创建和上下文\n切换的开销 。"
   },
   {
     "category": "concurrency",
-    "qes": "",
-    "ans": ""
+    "qes": "如何减少上下文切换",
+    "ans": "减少上下文切换的方法有无锁并发编程、\nCAS算法、使用最少线程和使用协程。\n⚫ 无锁并发编程。多线程竞争锁时，会引起上下文切换，所以多线程处理数据时，可\n以用一些办法来避免使用锁，如将数据的 ID按照 Hash算法取模分段，不同的线程\n处理不同段的数据。\n⚫ CAS算法。 Java的 Atomic包使用 CAS算法来更新数据，而不需要加锁。\n⚫ 使用最少线程。避免创建不需要的线程，比如任务很少，但是创建了很多线程来处\n理，这样会造成大量线程都处于等待状态。\n⚫ 协程：在单线程里实现多任务的调度，并在单线程里维持多个任务间的切换。"
+  },
+  {
+    "category": "concurrency",
+    "qes": "避免死 锁 的几个常 见 方法。",
+    "ans":"⚫避免一个线程同时获取多个锁。\n⚫避免一个线程在锁内同时占用多个资源，尽量保证每个锁只占用一个资源。\n⚫尝试使用定时锁，使用lock.tryLocktimeout）来替代使用内部锁机制。\n⚫对于数据库锁，加锁和解锁必须在一个数据库连接里，否则会出现解锁失败的情\n况。"
+  },
+  {
+    "category": "concurrency",
+    "qes": "volatile 的应用",
+    "ans": "在多线程并发编程中\nsynchronized和 volatile都扮演着重要的角色， volatile是轻量级\n的 synchronized，它在多处理器开发中保证了共享变量的 “可见性 ”。可见性的意思是当一\n个线程修改一个共享变量时，另外一个线程能读到这个修改的值。如果 volatile变量修饰\n符使用恰当的话，它比 synchronized的使用和执行成本更低，因为它不会引起线程上下\n文的切换和调度。本文将深入分析在硬件层面上 Intel处理器是如何实现 volatile的，通\n过深入分析帮助我们正确地使用 volatile变量。我们先从了解 volatile的定义开始。"
+  },
+  {
+    "category": "concurrency",
+    "qes": "而言之， volatile变 量自身具有哪些特性。",
+    "ans": "1.可 见 性。 对 一个 volatile变 量的 读 总 是能看到（任意 线 程） 对这 个 volatile变 量\n最后的写入。\n⚫2. 原子性： 对 任意 单 个 volatile变 量的 读 /写具有原子性，但 类 似于 volatile++这 种\n复合操作不具有原子性。"
+  },
+  {
+    "category": "concurrency",
+    "qes": "volatile变量是如何保证内存可见性的",
+    "ans": "简单来说就是，volatile变量的写操作完成的同时会将主内存的值刷新，并通知需要读取volatile变量的线程；接收到前一步通知的线程会进行对volatile变量的的读操作，此时会将本地值先置为失效，然后读取主内存的值"
+  },
+  {
+    "category": "concurrency",
+    "qes": "volatile写和 volatile读的内存语义做个总结。",
+    "ans": "线程 A写一个 volatile变量，实质上是线程 A向接下来将要读这个 volatile变量\n的某个线程发出了（其对共享变量所做修改的）消息。\n⚫ 线程 B读一个 volatile变量，实质上是线程 B接收了之前某个线程发出的（在写\n这个 volatile 变量之前对共享变量所做修改的）消息。\n⚫ 线程 A写一个 volatile变量，随后线程 B读这个 volatile变量，这个过程实质上\n是线程 A通过主内存向线程 B发送消息。"
+  },
+  {
+    "category": "concurrency",
+    "qes": "下面 对锁释 放和 锁获 取的\n内存 语义 做个 总结 。",
+    "ans":"线程A释放一个锁实质上是线程A向接下来将要获取这个锁的某个线程发出\n了（线程A对共享变量所做修改的）消息。\n⚫线程B获取一个锁实质上是线程B接收了之前某个线程发出的（在释放这个\n锁之前对共享变量所做修改的）消息。\n⚫线程A释放锁，随后线程B获取这个锁这个过程实质上是线程A通过主内存\n向线程B发送消息。"
+  },
+  {
+    "category": "concurrency",
+    "qes": "锁、volatile和CAS的比较",
+    "ans": "<div class=\"RichText ztext Post-RichText\"><h2><b>一、锁</b></h2><p>锁是一种<b>悲观</b>的机制。为多线程提供了互斥的访问机制。多个线程同时竞争锁时，没获得锁的线程将会被挂起(智能的JVM会根据之前获取锁操作中对锁的持有时间长短来判断是使线程挂起还是自旋)</p><p>锁的劣势：<br>1.未竞争到锁的线程挂起后再恢复时，会进行上下文的切换，开销大。<br>2.当一个线程正在等待锁时，它不能干任何其它事情。<br>如果持有锁的线程被延迟执行(例如发生了缺页错误、调度延迟、或者其它类似情况)，那么所有需要该锁的线程都必须等待下去。<br>如果被阻塞线程的优先级较高，而持有锁的线程优先级较低，那么这将是一个严重的问题——<b>优先级反转</b>。即使高优先级的线程可以抢先执行，但仍然需要等待锁被释放，从而导致它的优先级会降至低优先级线程的级别。<br>如果持有锁的线程被永久阻塞(例如由于出现无限循环，死锁，活锁或者其他的活跃性障碍)，所有等待这个锁的线程就永远无法执行下去。</p><p class=\"ztext-empty-paragraph\"><br></p><h2><b>二、volatile</b></h2><p>与锁相比，volatile是一种更轻量级的同步机制。<br>volatile的优势：在使用这些变量时，不会发生上下文切换和线程调度等操作。<br>volatile的局限：<b>不能保证复合操作的原子性</b>。例如i++，并不能通过volatile来保证原子性。</p><p><b>三、CAS</b></p><p>对于细粒度操作，除了volatile提供的轻量级的同步机制，还有另外一种更高效的<b>乐观</b>方法。<br>在针对多处理器操作而设计的处理器中提供了一些特殊指令，用于管理对共享数据的并发访问。<br>现在，几乎所有的现代处理器中都包含了某种形式的原子读-改-写指令，例如比较并交换(compare and swap)、关联加载/条件存储(load linked/store conditional)。操作系统和JVM使用这些指令来实现锁和并发的数据结构。</p><p class=\"ztext-empty-paragraph\"><br></p><h2><b>四、锁与原子变量的比较  以及 非阻塞算法 </b></h2><p class=\"ztext-empty-paragraph\"><br></p><p>总结</p><p>1.锁的优缺点？</p><p>2.volatile的优缺点？</p><p>3.什么是CAS？其原理、优势？</p><p>4.JVM如何支持CAS的？</p><p>5.什么是ABA问题？如果解决？</p><p class=\"ztext-empty-paragraph\"><br></p><p>以上问题答案可以参考这个视频<b><a href=\"https://link.zhihu.com/?target=https%3A//www.bilibili.com/video/BV1ra4y1i7dE/\" class=\" wrap external\" target=\"_blank\" rel=\"nofollow noreferrer\" data-za-detail-view-id=\"1043\">多线程与高并发实战丨基础概念丨JUC同步工具丨同步容器丨线程池丨高频面试加分项丨吊打面试官的硬核技能 | 阿里P8</a></b></p><p></p></div>"
+  },
+  {
+    "category": "concurrency",
+    "qes": "Java并发-顺序一致性模型",
+    "ans": "<div id=\"content_views\" class=\"markdown_views prism-atom-one-dark\">\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" style=\"display: none;\">\n                        <path stroke-linecap=\"round\" d=\"M5,0 0,2.5 5,5z\" id=\"raphael-marker-block\" style=\"-webkit-tap-highlight-color: rgba(0, 0, 0, 0);\"></path>\n                    </svg>\n                    <h1 id=\"顺序一致性模型\"><a name=\"t0\"></a><a name=\"t0\"></a>顺序一致性模型</h1> \n<p>顺序一致性内存模型有两大特性 <br> 1）一个线程中的所有操作必须按照程序的顺序来执行。 <br> 2）（不管程序是否同步）所有线程都只能看到一个单一的操作执行顺序。在顺序一致性内存模型中，<code>每个操作都必须原子执行且立刻对所有线程可见</code>。 <br> <img src=\"https://img-blog.csdn.net/2018062418431399?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI5ODQyOTI5/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70\" alt=\"这里写图片描述\" title=\"\"></p> \n<p>在概念上，顺序一致性模型有一个单一的全局内存，这个内存通过一个左右摆动的开关可以连接到任意一个线程，同时每一个线程必须按照程序的顺序来执行内存读/写操作。在任意时间点最多只能有一个线程可以连接到内存。</p> \n<p>假设两个线程A，B并发执行，其中A线程有3个操作，它们在程序中的顺序是：A1-A2-A3。其中B线程也有3个操作，它们在程序中的顺序是：B1-B2-B3。</p> \n<p>假设两个线程使用监视器锁来正确同步： <br> <img src=\"https://img-blog.csdn.net/20180624185008126?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI5ODQyOTI5/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70\" alt=\"这里写图片描述\" title=\"\"></p> \n<p>假设这两个线程没有做同步： <br> <img src=\"https://img-blog.csdn.net/20180624185056961?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI5ODQyOTI5/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70\" alt=\"这里写图片描述\" title=\"\"></p> \n<p>在JMM中就没有这个保证。未同步程序在JMM中不但整体的执行顺序是无序的，而且所有线程看到的操作执行顺序也可能不一致。</p> \n<h1 id=\"顺序一致性模型与jmm的区别\"><a name=\"t1\"></a><a name=\"t1\"></a>顺序一致性模型与JMM的区别</h1> \n<p>1.顺序一致性模型保证单线程内的操作会按程序的顺序执行，而JMM不保证单线程内的操作会按程序的顺序执行。（比如正确同步的多线程程序在临界区内的重排序） <br> 2.顺序一致性模型保证所有线程能看到一致的操作执行顺序，而JMM不保证所有线程能看到一致的操作执行顺序。 <br> 3.JMM不保证对64位long型和double型变量的写操作具有原子性，而顺序一致性模型能保证对所有的内存读/写操作都具有原子性。</p> \n<p>这3个差异与处理器总线的工作机制密切相关。 <br> 总线事务包括读事务和写事物。读事务从内存传递数据到处理器，写事务从处理器传送数据到内存。每个事物会读/写内存中一个或多个物理上连续的字。在一个处理器执行总线事物期间，总线会禁止其他的处理器和I/O设备执行内存的读/写。 <br> <img src=\"https://img-blog.csdn.net/20180624192531707?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI5ODQyOTI5/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70\" alt=\"这里写图片描述\" title=\"\"></p> \n<p>假设处理器A，B，C同时向总线发起总线事务，只是总线仲裁会对竞争做出裁决，这里假设总线在仲裁后判定处理器A在竞争中获胜。此时处理器A继续它的总线事物，而其他两个处理器则要等待处理器A的总线事务完成后才能再次执行内存访问。期间不管总线事物是读事务还是写事物。 <br> 总线的这些工作机制可以把所有处理器对内存的访问以串型化的方式来执行。在任意时间点，最多只能有一个处理器可以访问内存。这个特性确保了单个总线之中的内存读/写操作的原子性。</p>\n                </div>"
+  },
+  {
+    "category": "concurrency",
+    "qes": "顺序一致性和指令重排序",
+    "ans": "顺\n序一致性内存模型是一个理 论 参考模型， JMM和 处 理器内存模型在 设计时 通常会\n以 顺 序一致性内存模型 为 参照。在 设计时 JMM和 处 理器内存模型会 对顺 序一致性模型\n做一些放松，因 为 如果完全按照 顺 序一致性模型来 实现处 理器和 JMM，那么很多的 处 理\n器和 编译 器 优 化都要被禁止， 这对执 行性能将会有很大的影响。\n根据\n对 不同 类 型的 读 /写操作 组 合的 执 行 顺 序的放松，可以把常 见处 理器的内存模型\n划分 为 如下几种 类 型。\n1) ·放松程序中写 -读操作的顺序，由此产生了 Total Store Ordering内存模型（简称\n为 TSO）。\n2) ·在上面的基础上，继续放松程序中写 -写操作的顺序，由此产生了 Partial Store Order内存模型（简称为 PSO）。\n3) ·在前面两条的基 础 上， 继续 放松程序中 读 -写和 读 -读 操作的 顺 序，由此 产 生了\nRelaxedMemory Order内存模型（ 简 称 为 RMO）和 PowerPC内存模型。"
+  },
+  {
+    "category": "concurrency",
+    "qes": "为什么suspend已经过期，并不推荐再次使用",
+    "ans": "suspend()、 resume()和 stop()这三个方法均已过期，不建议使用的原因主要有：以\nsuspend()方法为例，在调用后，线程不会释放已经占\n有的资源（比如锁），而是占有着资源进入睡眠状态，这样容易引发死锁问题。同样，\nstop()方法在终结一个线程时不会保证线程的资源正常释放，通常是没有给予线程完成资\n源释放工作的机会，因此会导致程序可能工作在不确定状态下。"
+  },
+  {
+    "category": "concurrency",
+    "qes": "volatile和 synchronized关键字",
+    "ans": "Java支持多个线程同时访问一个对象或者对象的成员变量，由于每个线程可以拥有\n这个变量的拷贝（虽然对象以及成员变量分配的内存是在共享内存中的，但是每个执行\n的线程还是可以拥有一份拷贝，这样做的目的是加速程序的执行，这是现代多核处理器\n的一个显著特性），所以程序在执行过程中，一个线程看到的变量并不一定是最新的。\n关键字\nvolatile可以用来修饰字段（成员变量），就是告知程序任何对该变量的访问\n均需要从共享内存中获取，而对它的改变必须同步刷新回共享内存，它能保证所有线程\n对变量访问的可见性。\n举个例子，定义一个表示程序是否运行\n的成员变量 boolean on=true，那么另一个线\n程可能对它执行关闭动作（ on=false），这里涉及多个线程对变量的访问，因此需要将其\n定义成为 volatile boolean on true，这样其他线程对它进行改变时，可以让所有线程感知\n到变化，因为所有对 on变量的访问和修改都需要以共享内存为准。但是，过多地使用\nvolatile是不必要的，因为它会降低程序执行的效率。\n关键字\nsynchronized可以修饰方法或者以同步块的形式来进行使用，它主要确保多\n个线程在同一个时刻，只能有一个线程处于方法或者同步 块中，它保证了线程对变量访\n问的可见性和排他性。"
   },
   {
     "category": "concurrency",

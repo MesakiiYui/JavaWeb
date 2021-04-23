@@ -1,0 +1,131 @@
+package com.cpic.p17.property.service.impl.intergration;
+
+import com.alibaba.fastjson.JSON;
+import com.cpic.p17.common.utils.StringUtil;
+import com.cpic.p17.property.constant.BusinessEnvironment;
+import com.cpic.p17.property.constant.IntergrationConstant;
+import com.cpic.p17.property.model.intergration.govProtect.progress.GovProtectProgressReq;
+import com.cpic.p17.property.model.intergration.govProtect.progress.GovProtectProgressRes;
+import com.cpic.p17.property.model.intergration.govProtect.report.GovProtectReportReq;
+import com.cpic.p17.property.model.intergration.govProtect.report.GovProtectReportRes;
+import com.cpic.p17.property.service.intergration.GovProtectService;
+import com.cpic.p17.property.service.intergration.IntergrationCommonService;
+import com.cpic.p17.property.utils.HttpClientUtil;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import java.util.HashMap;
+import java.util.Map;
+
+/**
+ * 调用非车中台对接政保系统
+ * @author jintienan
+ * @date 2021年01月08日
+ */
+@Service
+public class GovProtectServiceImpl implements GovProtectService {
+
+    private static Logger logger = LoggerFactory.getLogger(GovProtectServiceImpl.class);
+
+    // 从参数值表中获取外围系统提供的WebService地址
+    @Autowired
+    private IntergrationCommonService commonService;
+
+    /**
+     * healthInsuranceClaimReport_政保健康险报案接口
+     * @param req
+     * @return
+     */
+    @Override
+    public GovProtectReportRes healthInsuranceClaimReport(GovProtectReportReq req){
+        logger.info("开始调用healthInsuranceClaimReport_政保系统接口进行报案，请求入参" + JSON.toJSONString(req));
+        GovProtectReportRes res = new GovProtectReportRes();
+        req.setAppId(BusinessEnvironment.GOV_ID);
+        req.setPassword(BusinessEnvironment.GOV_PD);
+        req.setRequestCode(BusinessEnvironment.GOV_REQCODE_01);
+        req.setVersion(BusinessEnvironment.GOV_VER);
+        try {
+            String url = commonService.getAttrValueName(IntergrationConstant.CA_PROPERTIES,"ZTBDFW");
+            url = "http://29.20.128.156/outerServer";
+            // String url = "http://29.20.128.144:31001/outerServer";// SIT
+            // String url = "http://29.20.128.156/outerServer";// FT
+//            开发：http://29.20.128.156/outerServer
+//            测试：http://29.20.128.144:31001/outerServer
+//            生产：http://21.10.32.227:80/outerServer
+            logger.info("调用healthInsuranceClaimReport_政保系统接口进行报案：url=="+url);
+            //将入参转化为接口需要的json格式
+            String reqJson = JSON.toJSONString(req);
+            logger.info("调用healthInsuranceClaimReport_政保系统接口进行报案开始=====start=====" + reqJson);
+            //采用http请求提交
+            String response = send2JsonReq(url, reqJson);
+            logger.info("调用healthInsuranceClaimReport_政保系统接口进行报案结束=====end=====" + response);
+            //将返回的字符对象转化成出参对象
+            if(StringUtil.isNotBlank(response)){
+                res = JSON.parseObject(response, GovProtectReportRes.class);
+                if(null != res.getReportNo()){
+                    res.setIfSuccess("1");
+                }
+            }
+        } catch (Exception e) {
+//            res.setErrorCode(EnvironmentVariable.EXCEPTION);
+            logger.info("请求healthInsuranceClaimReport_政保系统接口进行报案异常！"+e.toString());
+        }
+        return res;
+    }
+
+    /**
+     * queryGovProtectProgress_政保案件进度查询接口
+     * @param req
+     * @return
+     */
+    @Override
+    public GovProtectProgressRes queryGovProtectProgress(GovProtectProgressReq req){
+        logger.info("开始调用queryGovProtectProgress_政保案件进度查询接口，请求入参" + JSON.toJSONString(req));
+//        req.setAppId(BusinessEnvironment.ZTDBFW_ID);
+//        req.setPassword(BusinessEnvironment.ZTDBFW_PD);
+//        req.setRequestCode(BusinessEnvironment.ZTDBFW_REQCODE_02);
+//        req.setVersion(BusinessEnvironment.ZTDBFW_VER);
+        GovProtectProgressRes res = new GovProtectProgressRes();
+        try {
+            String url = commonService.getAttrValueName(IntergrationConstant.CA_PROPERTIES,"ZTBDFW");
+            // String url = "http://29.20.128.144:31001/outerServer";// SIT
+            // String url = "http://29.20.128.156/outerServer";// FT
+            logger.info("调用queryGovProtectProgress_政保案件进度查询接口：url=="+url);
+            //将入参转化为接口需要的json格式
+            String reqJson = JSON.toJSONString(req);
+            logger.info("调用queryGovProtectProgress_政保案件进度查询接口开始=====start=====" + reqJson);
+            //采用http请求提交
+            String response = send2JsonReq(url, reqJson);
+            logger.info("调用queryGovProtectProgress_政保案件进度查询接口结束=====end=====" + response);
+            //将返回的字符对象转化成出参对象
+            if(StringUtil.isNotBlank(response)){
+                res = JSON.parseObject(response, GovProtectProgressRes.class);
+            }
+        } catch (Exception e) {
+//            res.setErrorCode(EnvironmentVariable.EXCEPTION);
+            logger.info("请求queryGovProtectProgress_政保案件进度查询接口异常！"+e.toString());
+        }
+        return res;
+    }
+
+
+    /**
+     * 组装JSON头 并发送json请求
+     * @param url
+     * @param reqJson
+     * @return
+     */
+    private String send2JsonReq(String url, String reqJson) {
+        // 请求头设置
+        Map<String,String> requestHeaderMap = new HashMap<String,String>();
+        requestHeaderMap.put("Accept", "application/json");
+        requestHeaderMap.put("Content-Type", "application/json; charset=utf-8");
+        Map<String,String> requestMap = new HashMap<String,String>();
+        requestMap.put("jsonData", reqJson);
+        String response = HttpClientUtil.callServicePassJson(url, requestMap, requestHeaderMap);
+        return response;
+    }
+
+}
+

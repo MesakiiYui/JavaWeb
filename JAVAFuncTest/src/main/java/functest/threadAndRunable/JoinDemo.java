@@ -17,7 +17,7 @@ public class JoinDemo {
     }
 
     static class JoinThread extends Thread {
-        private Thread thread;
+        private Thread thread;// 前一个thread的引用
 
         public JoinThread(Thread thread) {
             this.thread = thread;
