@@ -24,9 +24,9 @@ public class ThreadPoolExecutorDemo {
         //使用阿里巴巴推荐的创建线程池的方式
         //通过ThreadPoolExecutor构造函数自定义参数创建
         ThreadPoolExecutor executor = new ThreadPoolExecutor(
-                CORE_POOL_SIZE,
-                MAX_POOL_SIZE,
-                KEEP_ALIVE_TIME,
+                CORE_POOL_SIZE,//线程池中一直有的线程个数，默认情况下即使空闲也不会被回收（可以通过设置allowCoreThreadTimeOut参数来改变默认）
+                MAX_POOL_SIZE,//线程池中可以持有的最多线程数
+                KEEP_ALIVE_TIME,//超过corePoolSize数的空闲线程在被销毁之前等待新任务到达的最长时间
                 TimeUnit.SECONDS,// 等待时间的单位为 TimeUnit.SECONDS。
                 new ArrayBlockingQueue<>(QUEUE_CAPACITY),// 任务队列为 ArrayBlockingQueue，并且容量为 100;
                 new ThreadPoolExecutor.CallerRunsPolicy());// 饱和策略为 CallerRunsPolicy。
@@ -47,8 +47,9 @@ public class ThreadPoolExecutorDemo {
         int a = 1;
         ansList.add(a);
 
-
     }
+
+
 }
 
 

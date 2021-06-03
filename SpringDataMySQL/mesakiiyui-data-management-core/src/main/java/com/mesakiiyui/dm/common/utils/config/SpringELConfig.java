@@ -25,7 +25,7 @@ import java.nio.charset.Charset;
 @Slf4j
 @Configuration
 @ComponentScan("com.mesakiiyui.dm.common.service")
-@PropertySource("classpath:application.properties")
+@PropertySource("classpath:application.yaml")
 public class SpringELConfig {
     @Value("static inject")
     private String normal;

@@ -33,3 +33,37 @@
 
 ScopeTest.java
 
+12.jpa样例 JpaCommonQueryTest
+
+13.将yaml文件中的数据注入静态变量中
+
+```
+    YamlTest.java
+```
+
+14.spring boot 2.x 如何在启动时打印所有可用的controller地址
+
+```
+logging:
+  level:
+    root: INFO
+    org:
+      springframework:
+        web:
+          servlet:
+            mvc:
+              method:
+                annotation:
+                  RequestMappingHandlerMapping: trace
+```
+
+15. alibaba数据监控
+
+```
+http://localhost:8080/druid/
+```
+如果是whiteErrorPage 可能是druid的版本太高，需要手动开启管理页面
+
+```
+stat-view-servlet.enabled: true # 是否开启监控页面，默认不开启
+```

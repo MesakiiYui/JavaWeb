@@ -56,15 +56,23 @@ public class MyArrayList{
         log.info(JSON.toJSONString(valSet));
     }
 
+    private static void getOutOfBound(){
+        List<String> list  = new ArrayList<String>();
+        list.add("a");
+        list.add("b");
+        list.add("c");
+        log.info(list.get(12));
+    }
+
 
     public static void main(String[] args) throws Exception {
 //        MyArrayList ml = new MyArrayList();
 //        ml.arrest();
 //        listSizeCount();
-        setRemove();
-
-
+        getOutOfBound();
+//        setRemove();
     }
+
 
 
 }

@@ -65,4 +65,10 @@ function getSelectVal() {
     alert(mySelect.value);
 }
 
+function insertEmptySelect(){
+    var mySelect = document.getElementById("emptySelect");
+    mySelect.options.add(new Option("hahahah",1));
+    mySelect.options.add(new Option("hahahah",2));
+}
+
 
