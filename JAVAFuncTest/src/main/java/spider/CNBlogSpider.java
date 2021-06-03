@@ -2,14 +2,20 @@ package spider;
 
 import java.io.IOException;
 
+
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpHost;
+import org.apache.http.HttpResponse;
 import org.apache.http.HttpStatus;
+import org.apache.http.auth.AuthScope;
+import org.apache.http.auth.UsernamePasswordCredentials;
 import org.apache.http.client.ClientProtocolException;
+import org.apache.http.client.CredentialsProvider;
 import org.apache.http.client.config.RequestConfig;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.utils.HttpClientUtils;
+import org.apache.http.impl.client.BasicCredentialsProvider;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.util.EntityUtils;
@@ -18,19 +24,24 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
+
 public class CNBlogSpider {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception{
         //1.生成httpclient，相当于该打开一个浏览器
-        CloseableHttpClient httpClient = HttpClients.createDefault();
+//        CloseableHttpClient httpClient = HttpClients.createDefault();
         CloseableHttpResponse response = null;
         //2.创建get请求，相当于在浏览器地址栏输入 网址
         HttpGet request = new HttpGet("https://www.cnblogs.com/");
         //设置请求头，将爬虫伪装成浏览器
         request.setHeader("User-Agent","Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36");
         HttpHost proxy = new HttpHost("10.228.46.21", 8002);
+        CredentialsProvider provider = new BasicCredentialsProvider();
+        provider.setCredentials(new AuthScope(proxy), new UsernamePasswordCredentials("jintienan", "Aptx.4869"));
         RequestConfig config = RequestConfig.custom().setProxy(proxy).build();
+        CloseableHttpClient httpClient = HttpClients.custom().setDefaultCredentialsProvider(provider).build();
         request.setConfig(config);
+
         try {
             //3.执行get请求，相当于在输入地址栏后敲回车键
             response = httpClient.execute(request);

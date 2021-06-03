@@ -115,7 +115,7 @@ public class JpaCommonQueryTest {
         String responseString = mockMvc.perform(
                 get("http://localhost:8080/City/findPageCityOrderByPopulation")
                         //分页查询参数，第三页，每页15个数据，按照年龄倒序排序
-                        .param("size","")
+                        .param("size","10")
                         .param("page","3")
 
                         .contentType(MediaType.APPLICATION_JSON_UTF8) //编码格式为json的utf8
@@ -124,6 +124,8 @@ public class JpaCommonQueryTest {
                 .andReturn().getResponse().getContentAsString();   //将相应的数据转换为字符串
         System.out.println("--------返回的json = " + responseString);
     }
+
+
 
     /**
      * 限制结果数量 ，可以用top和first

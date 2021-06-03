@@ -1,0 +1,22 @@
+[
+  {
+    "category": "sql",
+    "qes": "请你查找employees里最晚入职员工的所有信息",
+    "ans": "select * from employees where employees.hire_date = (select max(employees.hire_date) from employees);\n"
+  },
+  {
+    "category": "sql",
+    "qes": "查找employees里入职员工时间排名倒数第三的员工所有信息",
+    "ans": "select *\n from employees\n order by hire_date desc\n limit 2,1;"
+  },
+  {
+    "category": "sql",
+    "qes": "",
+    "ans": ""
+  },
+  {
+    "category": "sql",
+    "qes": "",
+    "ans": ""
+  }
+]

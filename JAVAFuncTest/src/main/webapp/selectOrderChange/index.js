@@ -7,6 +7,7 @@ function myFunction(){
     console.log("options", options);
     var selectedIndex = mySelect.selectedIndex;
     var selectedValue = options[selectedIndex].value;
+    alert("options.length:"+options.length);
     alert("selectedValue:"+selectedValue);
     var numMap = new Map();
     var charMap = new Map();
@@ -32,6 +33,42 @@ function myFunction(){
             break;
         }
     }
+}
+function changeOrder() {
+    var mySelect = document.getElementById("mySelect");
+    var options = mySelect.options;
+    // 假设选中的是index为3的值
+    var ansMap = new Map();
+    ansMap.set(options[0].value, options[0].text);
+    var targetIndex;
+    for(var i = 0; i < options.length; i++){
+        if("x" == options[i].value){
+            targetIndex = i;
+            ansMap.set(options[i].value, options[i].text);
+            break;
+        }
+    }
+    for(var i = 0; i < options.length; i++){
+        if(i != targetIndex && i != 0){
+            ansMap.set(options[i].value, options[i].text);
+        }
+    }
+    mySelect.innerHTML = "";
+    ansMap.forEach(function(key, value){
+        mySelect.options.add(new Option(key,value));
+    });
+    mySelect[3].selected = true;
+}
+
+function getSelectVal() {
+    var mySelect = document.getElementById("mySelect");
+    alert(mySelect.value);
+}
+
+function insertEmptySelect(){
+    var mySelect = document.getElementById("emptySelect");
+    mySelect.options.add(new Option("hahahah",1));
+    mySelect.options.add(new Option("hahahah",2));
 }
 
 

@@ -1,0 +1,24 @@
+{
+  "appId": "P17",
+  "password": "P1720200403",
+  "requestBody": {
+    "requestBody": {
+      "bizData": {
+        "caseReportNo": "ESHHZB20210000030",
+        "caseUuid": "7cf1174860c846588c4425bddb205577"
+      },
+      "channel": "95500",
+      "msgId": "e41d050bb6424feda51c07a64426beb364484e28c8064dec9c0cd53106f468e2",
+      "systemInfo": {
+        "authPwd": "GP15CS",
+        "authUser": "GP15CS",
+        "destSys": "PT19GIPOS",
+        "srcSys": "GP15CS",
+        "timeStamp": "2021-02-23 10:31:12"
+      },
+      "type": "100"
+    }
+  },
+  "requestCode": "ZTZBFW001001002",
+  "version": "1.00"
+}

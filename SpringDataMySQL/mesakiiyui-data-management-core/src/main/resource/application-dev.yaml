@@ -1,0 +1,71 @@
+decisionEngine:
+  url: https://zhuanlan.zhihu.com/api/columns/zhihuadmin
+logging:
+  level:
+    root: INFO
+    org:
+      springframework:
+        web:
+          servlet:
+            mvc:
+              method:
+                annotation:
+                  RequestMappingHandlerMapping: trace
+spring:
+  datasource:
+    druid:
+      connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
+      filters: stat,wall
+      initial-size: 5
+      maxActive: 20
+      maxPoolPreparedStatementPerConnectionSize: 20
+      maxWait: 60000
+      min-idle: 5
+      minEvictableIdleTimeMillis: 300000
+      poolPreparedStatements: true
+      stat-view-servlet:
+        allow: 127.0.0.1,*
+        deny: 192.168.1.73
+        login-password: 123456
+        login-username: admin
+        reset-enable: false
+        url-pattern: /druid/*
+        enabled: true # 是否开启监控页面，默认不开启
+      testOnBorrow: false
+      testOnReturn: false
+      testWhileIdle: true
+      timeBetweenEvictionRunsMillis: 60000
+      validationQuery: 'SELECT 1 '
+      web-stat-filter:
+        enabled: true
+        exclusions: '*.js,*.gif,*.jpg,*.bmp,*.png,*.css,*.ico,/druid/*'
+        url-pattern: /*
+    password: root
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/spring_boot_action?serverTimezone=Asia/Shanghai
+    userName: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  redis:
+    database: 0
+    host: 127.0.0.1
+    lettuce:
+      pool:
+        max-active: 8
+        max-idle: 8
+        max-wait: -1
+        min-idle: 0
+    password: ''
+    port: 6379
+    timeout: 3000
+  thymeleaf:
+    prefix: classpath:/templates/
+springELConfig:
+  age: 23
+  name: Aimer
+people:
+  name: bob
+  age: 23
+  education: PHD
+  sex: male

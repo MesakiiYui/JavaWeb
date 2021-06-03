@@ -1,0 +1,188 @@
+package com.cpic.p17.property.service.impl.acc;
+import com.cpic.p17.property.model.intergration.NewAccidentClaim;
+import com.cpic.p17.property.model.intergration.ReqAccSubmit;
+import com.cpic.p17.property.model.intergration.govProtect.report.GovOutBody;
+import com.cpic.p17.property.model.intergration.govProtect.report.GovProtectReportAccident;
+import com.cpic.p17.property.model.intergration.govProtect.report.GovProtectReportBizData;
+import com.cpic.p17.property.model.intergration.govProtect.report.GovProtectReportClinic;
+import com.cpic.p17.property.model.intergration.govProtect.report.GovProtectReportInfo;
+import com.cpic.p17.property.model.intergration.govProtect.report.GovProtectReportInsuredInfo;
+import com.cpic.p17.property.model.intergration.govProtect.report.GovProtectReportReq;
+import com.cpic.p17.property.model.intergration.govProtect.report.GovProtectReportReqBody;
+import com.cpic.p17.property.model.intergration.govProtect.report.GovProtectReportRisk;
+import com.cpic.p17.property.model.intergration.govProtect.report.GovProtectSysInfo;
+import com.cpic.p17.property.service.acc.GovProcessService;
+import com.cpic.p17.property.service.old.OrganDeptService;
+import com.cpic.p17.property.utils.StringUtil;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+import java.util.UUID;
+
+/**
+ * @Author: jintienan
+ * @Date: 2021/1/20 16:41
+ */
+@Service
+public class GovProcessServiceImpl implements GovProcessService {
+    private static final String AUTH_PD = "GP15CS";
+    private static final String DEST_SYS = "PT19GIPOS";
+
+    @Autowired
+    OrganDeptService organDeptService;
+
+    public GovProtectReportReq govClaimReqProcess(ReqAccSubmit reqAccSubmit) throws Exception{
+        NewAccidentClaim newAccidentClaim = reqAccSubmit.getAccClaimNew();
+
+        GovProtectReportReq processedReq = new GovProtectReportReq();
+        GovOutBody outBody = new GovOutBody();
+        GovProtectReportReqBody innerBody = new GovProtectReportReqBody();
+
+        GovProtectSysInfo systemInfo = new GovProtectSysInfo();
+
+        // systemInfo填充开始
+        systemInfo.setAuthPwd(AUTH_PD);
+        systemInfo.setAuthUser(AUTH_PD);
+        systemInfo.setSrcSys(AUTH_PD);
+        systemInfo.setDestSys(DEST_SYS);
+        Date dateNow = new Date();
+        SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        String dateStringNow = formatter.format(dateNow);
+        systemInfo.setTimeStamp(dateStringNow);
+        // systemInfo填充结束
+
+
+        // ... reportInfo填充开始
+        GovProtectReportInfo reportInfo = new GovProtectReportInfo();
+        reportInfo.setCertNo("");
+        reportInfo.setCertType("");
+        reportInfo.setMobile(newAccidentClaim.getNotifyMobile());
+        reportInfo.setName(newAccidentClaim.getNotifyName());
+        reportInfo.setSex(newAccidentClaim.getNotifySex());
+        reportInfo.setTelephone("");
+        // ... reportInfo填充结束
+        // ... accident填充开始
+        GovProtectReportAccident accidentOne = new GovProtectReportAccident();
+        // ...  ...clinicInfo填充开始
+        GovProtectReportClinic clinicInfo = new GovProtectReportClinic();
+        clinicInfo.setFirstVisitHospCode(newAccidentClaim.getFirstHospitalCode());
+        clinicInfo.setFirstVisitHospName(newAccidentClaim.getFirstHospitalName());
+        clinicInfo.setHospitalCode(newAccidentClaim.getTreatedHospitalCode());
+        clinicInfo.setHospitalName(newAccidentClaim.getTreatedHospitalName());
+        // ... ...clinicInfo填充结束
+        // ... ... insuredInfo填充开始
+        GovProtectReportInsuredInfo insuredInfo = new GovProtectReportInsuredInfo();
+        insuredInfo.setCertNo(newAccidentClaim.getInsurantIdcardNumber());
+        insuredInfo.setCertType(transferCertType(newAccidentClaim.getInsurantIdcardType()));
+        insuredInfo.setName(newAccidentClaim.getInsurantName());
+        insuredInfo.setPolicyNo(newAccidentClaim.getPolicyNo());
+        insuredInfo.setRelationship("");// 被保人与报案人的关系--没有
+        // ... ... insuredInfo填充结束
+        // ... ... riskTakerInfo填充开始
+        GovProtectReportRisk riskTakerInfo = new GovProtectReportRisk();
+        riskTakerInfo.setBirthDay(newAccidentClaim.getDamageBirthday());
+        riskTakerInfo.setCertNo(newAccidentClaim.getIdcardNumber());
+        riskTakerInfo.setCertType(transferCertType(newAccidentClaim.getIdcardType()));
+        riskTakerInfo.setMobile(newAccidentClaim.getPhone());
+        riskTakerInfo.setName(newAccidentClaim.getDamageName());
+        riskTakerInfo.setNewBorned("0");// 默认为0
+        riskTakerInfo.setRelationWithInsured(newAccidentClaim.getInsurantAss());// 出险人与被保人的关系
+        riskTakerInfo.setRelationWithReporter(newAccidentClaim.getDamageAss());// 出险人与报案人的关系
+        riskTakerInfo.setSex(newAccidentClaim.getDamageSex());
+        riskTakerInfo.setTelephone("");
+        // ... ... riskTakerInfo填充结束
+        accidentOne.setCaseUuid(generateCaseUuid());
+        accidentOne.setRiskTakerInfo(riskTakerInfo);
+        accidentOne.setInsuredInfo(insuredInfo);
+        accidentOne.setLossOccurDate(geneRateDateType(newAccidentClaim.getDamageDate()));
+        accidentOne.setLossOccurReason(newAccidentClaim.getDamageType());
+        accidentOne.setLossStatus(newAccidentClaim.getDamageStatus());
+        accidentOne.setAccidentDesc(newAccidentClaim.getDamageProcess());
+        accidentOne.setAccidentProvince(transferCompnyCode(Long.parseLong(newAccidentClaim.getUnitId())));//省->承保支公司
+        accidentOne.setAccidentCity(transferCompnyCode(Long.parseLong(newAccidentClaim.getUnitBranchId())));// 城市->承保中支
+        accidentOne.setResidenceProvince(transferCompnyCode(Long.parseLong(newAccidentClaim.getUnitId())));
+        accidentOne.setResidenceCity(transferCompnyCode(Long.parseLong(newAccidentClaim.getUnitBranchId())));
+        accidentOne.setClinicInfo(clinicInfo);
+        // ... accident填充结束
+        List<GovProtectReportAccident> accidents = new ArrayList<GovProtectReportAccident>();
+        accidents.add(accidentOne);
+        // bizData填充开始
+        GovProtectReportBizData bizData = new GovProtectReportBizData();
+        bizData.setReportTime(dateStringNow);
+        bizData.setReportMethod(newAccidentClaim.getNotifyType());
+        bizData.setReporterInfo(reportInfo);
+        bizData.setAccidents(accidents);
+        // bizData填充结束
+        // innerBody填充开始
+        innerBody.setSystemInfo(systemInfo);
+        innerBody.setMsgId(generateCaseUuid() + generateCaseUuid());//64位
+        innerBody.setChannel("95500");
+        innerBody.setType("001");// 健康险案件报案
+        innerBody.setBizData(bizData);
+        // innerBody填充结束
+        outBody.setRequestBody(innerBody);
+        processedReq.setRequestBody(outBody);
+        return processedReq;
+    }
+
+    /**
+     * 将人意险的证件类型转变为政保的证件类型
+     * 政保证件类型如下
+     * 111	居民身份证
+     * 414	普通护照
+     * 990	其他
+     * @return
+     */
+    private String transferCertType(String accCertType){
+
+        if(StringUtil.isNotBlank(accCertType)){
+            if("1".equals(accCertType)){
+                return "111";
+            }else if("2".equals(accCertType)){
+                return "414";
+            }else{
+                return "990";
+            }
+        }else{
+            return "111";
+        }
+    }
+
+    /**
+     * 公司代码转化
+     * @param unitCode
+     * @return
+     */
+    private String transferCompnyCode(Long unitCode){
+        return organDeptService.getCompanyCodeByCompanyId(unitCode);
+    }
+
+    /**
+     * 生成32位uuid
+     * @return
+     */
+    private String generateCaseUuid(){
+        return UUID.randomUUID().toString().replaceAll("-", "");
+    }
+
+    /**
+     * 将指定时间字符串转化为date
+     * @param dateStr
+     * @return
+     * @throws ParseException
+     */
+    private Date geneRateDateType(String dateStr) throws ParseException {
+        return new SimpleDateFormat("yyyy-MM-dd hh:MM:ss").parse(dateStr.replaceAll("/", "-"));
+    }
+
+}
+
+
+tp.ccframe-101-xxxx-zhejiang-dispatch-jintienan-ddl.sql	脚本文件/生产环境/DDL/ORACLE
+CCFRAME_TP_CHECK.sql	脚本文件/生产环境/DQL/ORACLE
+tp.ccframe-101-xxxx-zhejiang-dispatch-jintienan-ddlrbk.sql	脚本文件/测试环境/ROLLBACK/ORACLE

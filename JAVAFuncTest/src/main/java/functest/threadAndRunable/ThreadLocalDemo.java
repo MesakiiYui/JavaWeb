@@ -10,7 +10,8 @@ import java.util.Random;
 public class ThreadLocalDemo {
     public static class MyRunnable implements Runnable {
 
-        // 示例1，创建了一个MyRunnable实例，并将该实例作为参数传递给两个线程。两个线程分别执行run()方法，并且都在ThreadLocal实例上保存了不同的值。
+        // 示例1，创建了一个MyRunnable实例，并将该实例作为参数传递给两个线程。两个线程分别执行run()方法，
+        // 并且都在ThreadLocal实例上保存了不同的值。
         // 如果它们访问的不是ThreadLocal对象并且调用的set()方法被同步了，则第二个线程会覆盖掉第一个线程设置的值。
         // 但是，由于它们访问的是一个ThreadLocal对象，因此这两个线程都无法看到对方保存的值。也就是说，它们存取的是两个不同的值。
         private ThreadLocal threadLocal = new ThreadLocal();
@@ -26,9 +27,10 @@ public class ThreadLocalDemo {
             System.out.println("Thread Name = " + Thread.currentThread().getName()+"default Formatter = "+formatter.get().toPattern());
             System.out.println("threadLocal.get()"+threadLocal.get());
         }
+
         //示例2 SimpleDateFormat 不是线程安全的，所以每个线程都要有自己的独立的副本
         private static final ThreadLocal<SimpleDateFormat> formatter =
-                ThreadLocal.withInitial(() -> new SimpleDateFormat("yyyyMMdd HHmm"));
+                ThreadLocal.withInitial(() -> new SimpleDateFormat("HH:mm:ss"));
 
 
 
